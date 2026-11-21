@@ -1,0 +1,118 @@
+{
+    "$__mpe_config_超凡者_契约": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1794397239887,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "E:\\.Workspace\\MAA\\MaaQXQ\\resource\\AOT\\pipeline\\超凡者_契约.json",
+            "savedViewport": {
+                "x": -3502,
+                "y": 265,
+                "zoom": 0.5
+            },
+            "filename": "超凡者_契约",
+            "version": "v2.1.1"
+        }
+    },
+    "$__mpe_anchor_锚点_超凡者_契约_超凡者_契约": {
+        "$__mpe_code": {
+            "position": {
+                "x": 8690,
+                "y": 170
+            }
+        }
+    },
+    "$__mpe_external_點擊任意位置繼續_超凡者_契约": {
+        "$__mpe_code": {
+            "position": {
+                "x": 7953,
+                "y": 504
+            }
+        }
+    },
+    "契约_下一个": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    683,
+                    876,
+                    2,
+                    2
+                ]
+            }
+        },
+        "next": [
+            "[Anchor]锚点_超凡者_契约"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8310,
+                "y": -196
+            }
+        }
+    },
+    "超凡者_契约": {
+        "anchor": "锚点_超凡者_契约",
+        "next": [
+            "超凡者_契约满级",
+            "契約進階",
+            "[JumpBack]點擊任意位置繼續"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7513,
+                "y": 115
+            }
+        }
+    },
+    "超凡者_契约满级": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "超凡者_契约满级.png"
+                ]
+            }
+        },
+        "next": [
+            "契约_下一个"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7930,
+                "y": -191
+            }
+        }
+    },
+    "契約進階": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    289,
+                    1086,
+                    143,
+                    49
+                ],
+                "expected": [
+                    "契約進階"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[Anchor]锚点_超凡者_契约"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7948,
+                "y": 165
+            }
+        }
+    }
+}

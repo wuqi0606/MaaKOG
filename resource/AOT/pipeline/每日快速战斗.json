@@ -1,0 +1,713 @@
+{
+    "$__mpe_config_每日快速战斗": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795234270098,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\每日快速战斗.json",
+            "savedViewport": {
+                "x": -1046,
+                "y": 105,
+                "zoom": 0.4
+            },
+            "filename": "每日快速战斗",
+            "version": "v2.1.3"
+        }
+    },
+    "$__mpe_anchor_仙果上次_每日快速战斗": {
+        "$__mpe_code": {
+            "position": {
+                "x": 7108,
+                "y": 1314
+            }
+        }
+    },
+    "$__mpe_external_主界面_每日快速战斗": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3102,
+                "y": 915
+            }
+        }
+    },
+    "$__mpe_external_返回入口_每日快速战斗": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5772,
+                "y": 2413
+            }
+        }
+    },
+    "$__mpe_external_點擊任意位置繼續_每日快速战斗": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5913,
+                "y": 127
+            }
+        }
+    },
+    "主界面检测_每日快速战斗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "主界面检测.png"
+                ]
+            }
+        },
+        "next": [
+            "冒险_每日快速战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3102,
+                "y": 564
+            }
+        }
+    },
+    "仙果_使用": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    300,
+                    695,
+                    120,
+                    40
+                ],
+                "expected": [
+                    "使用"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]阀门_仙果點擊繼續"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6375,
+                "y": 1204
+            }
+        }
+    },
+    "仙果_加10": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    548,
+                    618,
+                    60,
+                    44
+                ],
+                "expected": [
+                    "\\+10"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 5,
+        "repeat_delay": 200,
+        "next": [
+            "仙果_使用"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6070,
+                "y": 1168
+            }
+        }
+    },
+    "仙果_數量選擇": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    287,
+                    291,
+                    146,
+                    37
+                ],
+                "expected": [
+                    "數量選擇"
+                ]
+            }
+        },
+        "next": [
+            "仙果_加10"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5751,
+                "y": 1191
+            }
+        }
+    },
+    "仙果_最右": {
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    500,
+                    600,
+                    1,
+                    1
+                ],
+                "end": [
+                    [
+                        200,
+                        600,
+                        1,
+                        1
+                    ]
+                ]
+            }
+        },
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                48,
+                541,
+                623,
+                191
+            ]
+        },
+        "next": [
+            "仙果使用_500h",
+            "返回入口"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4851,
+                "y": 1121
+            }
+        }
+    },
+    "仙果_每日快速战斗": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    568,
+                    816,
+                    71,
+                    40
+                ],
+                "expected": [
+                    "仙果"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "加速次数等于0",
+            "[JumpBack]仙果_最右"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4478,
+                "y": 872
+            }
+        }
+    },
+    "仙果_點擊繼續": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    270,
+                    1120,
+                    180,
+                    40
+                ],
+                "expected": [
+                    "點擊任意位置繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7110,
+                "y": 1054
+            }
+        }
+    },
+    "仙果使用_100h": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    312,
+                    672,
+                    60,
+                    36
+                ],
+                "expected": [
+                    "使用"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "仙果上次",
+        "next": [
+            "仙果_數量選擇",
+            "道具加速次數已用盡",
+            "仙果使用_24h"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5263,
+                "y": 1215
+            }
+        }
+    },
+    "仙果使用_12h": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    61,
+                    684,
+                    57,
+                    32
+                ],
+                "expected": [
+                    "使用"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "仙果上次",
+        "next": [
+            "仙果_數量選擇",
+            "道具加速次數已用盡",
+            "返回入口"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5263,
+                "y": 1907
+            }
+        }
+    },
+    "仙果使用_200h": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    447,
+                    680,
+                    62,
+                    37
+                ],
+                "expected": [
+                    "使用"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "仙果上次",
+        "next": [
+            "仙果_數量選擇",
+            "道具加速次數已用盡",
+            "仙果使用_100h"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5263,
+                "y": 892
+            }
+        }
+    },
+    "仙果使用_24h": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    187,
+                    684,
+                    64,
+                    29
+                ],
+                "expected": [
+                    "使用"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "仙果上次",
+        "next": [
+            "仙果_數量選擇",
+            "仙果使用_12h",
+            "道具加速次數已用盡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5263,
+                "y": 1538
+            }
+        }
+    },
+    "仙果使用_500h": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    575,
+                    681,
+                    62,
+                    34
+                ],
+                "expected": [
+                    "使用"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "仙果上次",
+        "next": [
+            "仙果_數量選擇",
+            "道具加速次數已用盡",
+            "仙果使用_200h"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5267,
+                "y": 539
+            }
+        }
+    },
+    "免费次数大于0": {
+        "recognition": {
+            "type": "Custom",
+            "param": {
+                "custom_recognition": "CompareNumbers",
+                "custom_recognition_param": {
+                    "operator": ">",
+                    "separator": "/",
+                    "value": 0
+                },
+                "roi": [
+                    347,
+                    511,
+                    75,
+                    27
+                ]
+            }
+        },
+        "next": [
+            "加100"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4503,
+                "y": 148
+            }
+        }
+    },
+    "冒险_每日快速战斗": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "冒险.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "快速戰鬥"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3420,
+                "y": 565
+            }
+        }
+    },
+    "加100": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    552,
+                    540,
+                    60,
+                    200
+                ],
+                "expected": [
+                    "\\+10"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "repeat": 10,
+        "repeat_delay": 200,
+        "next": [
+            "大于1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4860,
+                "y": 125
+            }
+        }
+    },
+    "加速次数等于0": {
+        "recognition": {
+            "type": "Custom",
+            "param": {
+                "custom_recognition": "CompareNumbers",
+                "custom_recognition_param": {
+                    "operator": "=",
+                    "separator": "/",
+                    "value": 0
+                },
+                "roi": [
+                    347,
+                    511,
+                    75,
+                    27
+                ]
+            }
+        },
+        "action": {
+            "type": "StopTask"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4868,
+                "y": 761
+            }
+        }
+    },
+    "大于1": {
+        "recognition": {
+            "type": "Custom",
+            "param": {
+                "custom_recognition": "CompareNumbers",
+                "custom_recognition_param": {
+                    "operator": ">=",
+                    "separator": "/",
+                    "value": 1
+                },
+                "roi": [
+                    321,
+                    570,
+                    82,
+                    35
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    90,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "阀门_點擊繼續"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5217,
+                "y": 132
+            }
+        }
+    },
+    "完成一次": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5894,
+                "y": 264
+            }
+        }
+    },
+    "快速戰鬥": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    572,
+                    1116,
+                    108,
+                    34
+                ],
+                "expected": [
+                    "快速戰鬥"
+                ]
+            }
+        },
+        "pre_delay": 1000,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -20,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "自動戰鬥页面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3760,
+                "y": 539
+            }
+        }
+    },
+    "每日快速战斗": {
+        "next": [
+            "主界面检测_每日快速战斗",
+            "[JumpBack]主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2758,
+                "y": 714
+            }
+        }
+    },
+    "自動戰鬥页面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    294,
+                    292,
+                    136,
+                    37
+                ],
+                "expected": [
+                    "自動戰鬥"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]免费次数大于0",
+            "仙果_每日快速战斗"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4139,
+                "y": 569
+            }
+        }
+    },
+    "阀门_仙果點擊繼續": {
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                10,
+                482,
+                697,
+                493
+            ]
+        },
+        "next": [
+            "仙果_點擊繼續",
+            "[Anchor]仙果上次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6696,
+                "y": 1187
+            }
+        }
+    },
+    "阀门_點擊繼續": {
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                10,
+                482,
+                697,
+                493
+            ]
+        },
+        "next": [
+            "點擊任意位置繼續",
+            "完成一次"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5568,
+                "y": 148
+            }
+        }
+    },
+    "道具加速次數已用盡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    235,
+                    551,
+                    253,
+                    36
+                ],
+                "expected": [
+                    "道具加速次數已用盡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    320,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "返回入口"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5738,
+                "y": 1553
+            }
+        }
+    }
+}

@@ -1,0 +1,180 @@
+{
+    "$__mpe_config_塑靈_淬炼": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795251156524,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\塑靈_淬炼.json",
+            "savedViewport": {
+                "x": -3911,
+                "y": 196,
+                "zoom": 0.59
+            },
+            "filename": "塑靈_淬炼",
+            "version": "v2.1.3"
+        }
+    },
+    "$__mpe_anchor_锚点_塑靈_淬炼_塑靈_淬炼": {
+        "$__mpe_code": {
+            "position": {
+                "x": 8976,
+                "y": 746
+            }
+        }
+    },
+    "$__mpe_external_點擊任意位置繼續_塑靈_淬炼": {
+        "$__mpe_code": {
+            "position": {
+                "x": 8318,
+                "y": 482
+            }
+        }
+    },
+    "塑靈_淬炼": {
+        "anchor": "锚点_塑靈_淬炼",
+        "next": [
+            "淬炼_快速强化"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7443,
+                "y": 219
+            }
+        }
+    },
+    "淬炼_下一个": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    683,
+                    876,
+                    2,
+                    2
+                ]
+            }
+        },
+        "next": [
+            "[Anchor]锚点_塑靈_淬炼"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8665,
+                "y": 718
+            }
+        }
+    },
+    "淬炼_快速强化": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    428,
+                    1083,
+                    157,
+                    47
+                ],
+                "expected": [
+                    "快速強化"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "[JumpBack]淬炼_确认",
+            "[JumpBack]淬炼_觉醒",
+            "[JumpBack]點擊任意位置繼續",
+            "[JumpBack]淬炼_快速强化",
+            "淬炼_請期待後續等級的開放"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7840,
+                "y": 175
+            }
+        }
+    },
+    "淬炼_确认": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    467,
+                    765,
+                    90,
+                    45
+                ],
+                "expected": [
+                    "確定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8312,
+                "y": -27
+            }
+        }
+    },
+    "淬炼_觉醒": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    299,
+                    1086,
+                    119,
+                    49
+                ],
+                "expected": [
+                    "覺醒"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8305,
+                "y": 224
+            }
+        }
+    },
+    "淬炼_請期待後續等級的開放": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    232,
+                    1088,
+                    258,
+                    34
+                ],
+                "expected": [
+                    "請期待後續等級的開放"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "淬炼_下一个"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8326,
+                "y": 705
+            }
+        }
+    }
+}

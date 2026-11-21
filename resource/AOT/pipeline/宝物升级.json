@@ -1,0 +1,276 @@
+{
+    "$__mpe_config_宝物升级": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795251206772,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\宝物升级.json",
+            "savedViewport": {
+                "x": -3880,
+                "y": 196,
+                "zoom": 0.59
+            },
+            "filename": "宝物升级",
+            "version": "v2.1.3"
+        }
+    },
+    "$__mpe_anchor_锚点_宝物升级_宝物升级": {
+        "$__mpe_code": {
+            "position": {
+                "x": 9137,
+                "y": 222
+            }
+        }
+    },
+    "宝物_下一个": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "下一个.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[Anchor]锚点_宝物升级"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8347,
+                "y": 537
+            }
+        }
+    },
+    "宝物_下一个点击": {
+        "pre_delay": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    678,
+                    310,
+                    1,
+                    1
+                ]
+            }
+        },
+        "next": [
+            "[Anchor]锚点_宝物升级"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8671,
+                "y": -94
+            }
+        }
+    },
+    "宝物_啟動": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    310,
+                    1202,
+                    93,
+                    38
+                ],
+                "expected": [
+                    "啟動"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7628,
+                "y": 482
+            }
+        }
+    },
+    "宝物_突破": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    316,
+                    1203,
+                    92,
+                    40
+                ],
+                "expected": [
+                    "突破"
+                ],
+                "order_by": "Vertical"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "宿靈",
+            "毀滅方塊",
+            "[JumpBack]宝物_突破"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7631,
+                "y": 70
+            }
+        }
+    },
+    "宝物_突破B": {
+        "max_hit": 20,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    315,
+                    1070,
+                    91,
+                    46
+                ],
+                "expected": [
+                    "突破"
+                ]
+            }
+        },
+        "pre_wait_freezes": {
+            "time": 300,
+            "target": [
+                50,
+                891,
+                621,
+                132
+            ]
+        },
+        "action": {
+            "type": "Click"
+        },
+        "attach": {
+            "reset_hit": true
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8351,
+                "y": 187
+            }
+        }
+    },
+    "宝物_返回点击": {
+        "pre_delay": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    529,
+                    1218,
+                    2,
+                    2
+                ]
+            }
+        },
+        "next": [
+            "宝物_下一个点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8346,
+                "y": -94
+            }
+        }
+    },
+    "宝物_返回点击1": {
+        "pre_delay": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    529,
+                    1218,
+                    2,
+                    2
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8342,
+                "y": 808
+            }
+        }
+    },
+    "宝物升级": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "ResetHitCount",
+                "custom_action_param": {
+                    "nodes": [
+                        "宝物_突破B"
+                    ]
+                }
+            }
+        },
+        "anchor": "锚点_宝物升级",
+        "rate_limit": 1500,
+        "next": [
+            "宝物_突破",
+            "[JumpBack]宝物_啟動",
+            "宝物_下一个"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7203,
+                "y": 231
+            }
+        }
+    },
+    "宿靈": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "宿靈.png"
+                ]
+            }
+        },
+        "next": [
+            "宝物_返回点击"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8013,
+                "y": -71
+            }
+        }
+    },
+    "毀滅方塊": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "毀滅方塊.png"
+                ]
+            }
+        },
+        "next": [
+            "[JumpBack]宝物_突破B",
+            "宝物_下一个",
+            "[JumpBack]宝物_返回点击1"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8003,
+                "y": 203
+            }
+        }
+    }
+}

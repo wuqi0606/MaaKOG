@@ -1,0 +1,384 @@
+{
+    "$__mpe_config_商店购买_儲值": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795251085536,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\商店购买_儲值.json",
+            "savedViewport": {
+                "x": -2216,
+                "y": 172,
+                "zoom": 0.59
+            },
+            "filename": "商店购买_儲值",
+            "version": "v2.1.3"
+        }
+    },
+    "$__mpe_anchor_锚点_禮包_商店购买_儲值": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5801,
+                "y": 679
+            }
+        }
+    },
+    "$__mpe_anchor_锚点_禮包页面_儲值_商店购买_儲值": {
+        "$__mpe_code": {
+            "position": {
+                "x": 6226,
+                "y": 443
+            }
+        }
+    },
+    "$__mpe_external_主界面_商店购买_儲值": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3701,
+                "y": 501
+            }
+        }
+    },
+    "$__mpe_external_活动礼包最下_商店购买_儲值": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5797,
+                "y": 515
+            }
+        }
+    },
+    "$__mpe_external_確定要使用钻石_商店购买_儲值": {
+        "$__mpe_code": {
+            "position": {
+                "x": 6223,
+                "y": 341
+            }
+        }
+    },
+    "$__mpe_external_返回入口_商店购买_儲值": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4885,
+                "y": 961
+            }
+        }
+    },
+    "主界面检测_儲值": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "主界面检测.png"
+                ]
+            }
+        },
+        "next": [
+            "儲值"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3709,
+                "y": 186
+            }
+        }
+    },
+    "儲值": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    623,
+                    152,
+                    79,
+                    530
+                ],
+                "expected": [
+                    "儲值"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -20,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "禮包__儲值",
+            "[JumpBack]儲值"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4030,
+                "y": 166
+            }
+        }
+    },
+    "商店购买_儲值": {
+        "next": [
+            "主界面检测_儲值",
+            "[JumpBack]主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3393,
+                "y": 330
+            }
+        }
+    },
+    "禮包__儲值": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "禮包.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "锚点_禮包",
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                17,
+                377,
+                684,
+                785
+            ]
+        },
+        "next": [
+            "超值特惠",
+            "養成禮包",
+            "英魂禮包",
+            "装備強化禮包",
+            "返回入口"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4365,
+                "y": 149
+            }
+        }
+    },
+    "禮包页面_儲值": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "ResetHitCount",
+                "custom_action_param": {
+                    "nodes": [
+                        "活动礼包最下"
+                    ]
+                }
+            }
+        },
+        "anchor": "锚点_禮包页面_儲值",
+        "timeout": 10000,
+        "rate_limit": 2000,
+        "next": [
+            "[JumpBack]钻石图片购买_儲值",
+            "[JumpBack]活动礼包最下",
+            "[Anchor]锚点_禮包"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5359,
+                "y": 242
+            }
+        }
+    },
+    "英魂禮包": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    15,
+                    1091,
+                    649,
+                    67
+                ],
+                "expected": [
+                    "英魂"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "禮包页面_儲值"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4877,
+                "y": 308
+            }
+        }
+    },
+    "装備強化禮包": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    15,
+                    1091,
+                    649,
+                    67
+                ],
+                "expected": [
+                    "装備"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "禮包页面_儲值"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4879,
+                "y": 626
+            }
+        }
+    },
+    "超值特惠": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    15,
+                    1091,
+                    649,
+                    67
+                ],
+                "expected": [
+                    "超值特惠"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "禮包页面_儲值"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4881,
+                "y": -303
+            }
+        }
+    },
+    "钻石图片购买_儲值": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    494,
+                    481,
+                    167,
+                    610
+                ],
+                "template": [
+                    "免费.png",
+                    "钻石.png"
+                ],
+                "order_by": "Vertical"
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 10000,
+        "next": [
+            "點擊繼續_儲值",
+            "[JumpBack]確定要使用钻石"
+        ],
+        "on_error": [
+            "[Anchor]锚点_禮包页面_儲值"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5796,
+                "y": 56
+            }
+        }
+    },
+    "養成禮包": {
+        "max_hit": 1,
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    15,
+                    1091,
+                    649,
+                    67
+                ],
+                "expected": [
+                    "養成"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "禮包页面_儲值"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4878,
+                "y": 2
+            }
+        }
+    },
+    "點擊繼續_儲值": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    265,
+                    1121,
+                    198,
+                    38
+                ],
+                "expected": [
+                    "點擊任意位置繼續"
+                ]
+            }
+        },
+        "pre_delay": 500,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    366,
+                    1166,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 6216,
+                "y": 30
+            }
+        }
+    }
+}

@@ -1,0 +1,180 @@
+{
+    "$__mpe_config_超凡者_训练": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795251236630,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\超凡者_训练.json",
+            "savedViewport": {
+                "x": -3913,
+                "y": 206,
+                "zoom": 0.59
+            },
+            "filename": "超凡者_训练",
+            "version": "v2.1.3"
+        }
+    },
+    "$__mpe_anchor_锚点_超凡者_训练_超凡者_训练": {
+        "$__mpe_code": {
+            "position": {
+                "x": 8982,
+                "y": 726
+            }
+        }
+    },
+    "$__mpe_external_點擊任意位置繼續_超凡者_训练": {
+        "$__mpe_code": {
+            "position": {
+                "x": 8318,
+                "y": 482
+            }
+        }
+    },
+    "训练_下一个": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    683,
+                    876,
+                    2,
+                    2
+                ]
+            }
+        },
+        "next": [
+            "[Anchor]锚点_超凡者_训练"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8645,
+                "y": 680
+            }
+        }
+    },
+    "训练_快速訓練": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    428,
+                    1083,
+                    157,
+                    47
+                ],
+                "expected": [
+                    "快速訓練"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "[JumpBack]训练_确认",
+            "[JumpBack]训练_精通",
+            "[JumpBack]點擊任意位置繼續",
+            "[JumpBack]训练_快速訓練",
+            "训练_請期待後續等級的開放"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7840,
+                "y": 175
+            }
+        }
+    },
+    "训练_确认": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    467,
+                    765,
+                    90,
+                    45
+                ],
+                "expected": [
+                    "確定"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8312,
+                "y": -27
+            }
+        }
+    },
+    "训练_精通": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    299,
+                    1086,
+                    119,
+                    49
+                ],
+                "expected": [
+                    "精通"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8305,
+                "y": 224
+            }
+        }
+    },
+    "训练_請期待後續等級的開放": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    232,
+                    1076,
+                    258,
+                    34
+                ],
+                "expected": [
+                    "請期待後續等級的開放"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "训练_下一个"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 8310,
+                "y": 671
+            }
+        }
+    },
+    "超凡者_训练": {
+        "anchor": "锚点_超凡者_训练",
+        "next": [
+            "训练_快速訓練"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7443,
+                "y": 219
+            }
+        }
+    }
+}

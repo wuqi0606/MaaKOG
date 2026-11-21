@@ -1,0 +1,207 @@
+{
+    "$__mpe_config_啟示錄": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795251148966,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\啟示錄.json",
+            "savedViewport": {
+                "x": -3531,
+                "y": 213,
+                "zoom": 0.59
+            },
+            "filename": "啟示錄",
+            "version": "v2.1.3"
+        }
+    },
+    "$__mpe_external_主界面_啟示錄": {
+        "$__mpe_code": {
+            "position": {
+                "x": 6822,
+                "y": 560
+            }
+        }
+    },
+    "$__mpe_external_返回入口_啟示錄": {
+        "$__mpe_code": {
+            "position": {
+                "x": 7932,
+                "y": 200
+            }
+        }
+    },
+    "主界面检测_啟示錄": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "主界面检测.png"
+                ]
+            }
+        },
+        "next": [
+            "啟示錄_啟示錄"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6825,
+                "y": 242
+            }
+        }
+    },
+    "剩余体力等于0": {
+        "recognition": {
+            "type": "Custom",
+            "param": {
+                "custom_recognition": "CompareNumbers",
+                "custom_recognition_param": {
+                    "operator": "==",
+                    "separator": "/",
+                    "value": 0
+                },
+                "roi": [
+                    341,
+                    1119,
+                    73,
+                    24
+                ]
+            }
+        },
+        "next": [
+            "返回入口"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7579,
+                "y": 146
+            }
+        }
+    },
+    "啟示錄": {
+        "next": [
+            "主界面检测_啟示錄",
+            "[JumpBack]主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6443,
+                "y": 321
+            }
+        }
+    },
+    "啟示錄_啟示錄": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    368,
+                    1245,
+                    106,
+                    29
+                ],
+                "expected": [
+                    "啟示錄"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -20,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "剩余体力等于0",
+            "[JumpBack]戰鬥"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7154,
+                "y": 228
+            }
+        }
+    },
+    "戰鬥": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    324,
+                    1079,
+                    74,
+                    36
+                ],
+                "expected": [
+                    "戰鬥"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_delay": 1000,
+        "next": [
+            "戰鬥页面",
+            "[JumpBack]戰鬥"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7573,
+                "y": 525
+            }
+        }
+    },
+    "戰鬥页面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "戰鬥页面.png"
+                ]
+            }
+        },
+        "timeout": 60000,
+        "rate_limit": 3000,
+        "next": [
+            "等待戰鬥结束"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 7929,
+                "y": 511
+            }
+        }
+    },
+    "等待戰鬥结束": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    272,
+                    1125,
+                    177,
+                    31
+                ],
+                "expected": [
+                    "點擊任意位置繼續"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 8322,
+                "y": 549
+            }
+        }
+    }
+}

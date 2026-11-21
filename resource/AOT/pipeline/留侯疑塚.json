@@ -1,0 +1,195 @@
+{
+    "$__mpe_config_留侯疑塚": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795236147973,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\留侯疑塚.json",
+            "savedViewport": {
+                "x": -1604,
+                "y": 232,
+                "zoom": 0.66
+            },
+            "filename": "留侯疑塚",
+            "version": "v2.1.3"
+        }
+    },
+    "$__mpe_external_skip_留侯疑塚": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4282,
+                "y": 254
+            }
+        }
+    },
+    "$__mpe_external_下一關_留侯疑塚": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4282,
+                "y": 398
+            }
+        }
+    },
+    "$__mpe_external_主界面_留侯疑塚": {
+        "$__mpe_code": {
+            "position": {
+                "x": 2878,
+                "y": 463
+            }
+        }
+    },
+    "主界面检测_留侯疑塚": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "主界面检测.png"
+                ]
+            }
+        },
+        "next": [
+            "冒险_留侯疑塚"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2864,
+                "y": 142
+            }
+        }
+    },
+    "冒险_留侯疑塚": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    8,
+                    1178,
+                    702,
+                    99
+                ],
+                "template": [
+                    "冒险.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -20,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "試煉"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3193,
+                "y": 133
+            }
+        }
+    },
+    "留侯疑塚": {
+        "next": [
+            "主界面检测_留侯疑塚",
+            "[JumpBack]主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2512,
+                "y": 266
+            }
+        }
+    },
+    "留侯疑塚_挑战": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    275,
+                    135,
+                    175,
+                    1116
+                ],
+                "template": [
+                    "留侯疑塚_挑战.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "timeout": 10000,
+        "next": [
+            "[JumpBack]開始挑戰",
+            "[JumpBack]skip",
+            "[JumpBack]下一關"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3865,
+                "y": 117
+            }
+        }
+    },
+    "試煉": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    27,
+                    1112,
+                    80,
+                    45
+                ],
+                "expected": [
+                    "試煉"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "留侯疑塚_挑战"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3535,
+                "y": 158
+            }
+        }
+    },
+    "開始挑戰": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    283,
+                    925,
+                    157,
+                    44
+                ],
+                "expected": [
+                    "開始挑戰"
+                ]
+            }
+        },
+        "pre_wait_freezes": 200,
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4276,
+                "y": -58
+            }
+        }
+    }
+}

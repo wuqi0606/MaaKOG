@@ -1,0 +1,51 @@
+{
+    "$__mpe_config_连点": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "E:\\.Workspace\\MAA\\MaaQXQ\\resource\\AOT\\pipeline\\连点.json",
+            "lastSyncTime": 1794717035093,
+            "isModifiedExternally": false,
+            "coordinateMode": "absolute-v1",
+            "isDeleted": false,
+            "savedViewport": {
+                "x": -1876,
+                "y": 233,
+                "zoom": 0.43
+            },
+            "filename": "连点",
+            "version": "v2.1.1"
+        }
+    },
+    "连点": {
+        "next": [
+            "[JumpBack]连点_快速钓鱼"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5606,
+                "y": 308
+            }
+        }
+    },
+    "连点_快速钓鱼": {
+        "pre_delay": 300,
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    662,
+                    1098,
+                    1,
+                    1
+                ]
+            }
+        },
+        "post_delay": 0,
+        "$__mpe_code": {
+            "position": {
+                "x": 6030,
+                "y": 288
+            }
+        }
+    }
+}

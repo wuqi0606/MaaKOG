@@ -1,0 +1,9 @@
+{
+  "name": "maaqxq",
+  "private": true,
+  "devDependencies": {
+    "@nekosu/prettier-plugin-maafw-sort": "^1.1.0",
+    "prettier": "^3.10.1",
+    "prettier-plugin-multiline-arrays": "^4.1.11"
+  }
+}

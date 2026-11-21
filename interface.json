@@ -1,0 +1,322 @@
+{
+    "interface_version": 2,
+    "name": "MaaAOT",
+    "description": "少女回战（AOT）自动化脚本，基于 MaaFramework 构建。",
+    "contact": "GitHub: wuqi0606",
+    "license": "MIT",
+    "welcome": "欢迎使用 MaaAOT！少女回战日常自动化。",
+    "github": "https://github.com/wuqi0606/MaaAOT",
+    "version": "1.0.0",
+    "controller": [
+        {
+            "name": "安卓端（模拟器）",
+            "type": "Adb",
+            "display_short_side": 720
+        }
+    ],
+    "resource": [
+        {
+            "name": "AOT",
+            "path": [
+                "resource/base",
+                "resource/AOT"
+            ],
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "label": "少女回战"
+        }
+    ],
+    "agent": {
+        "child_exec": "python/python.exe",
+        "child_args": [
+            "-u",
+            "-s",
+            "-X",
+            "utf8=1",
+            "./agent/main.py"
+        ]
+    },
+    "task": [
+        {
+            "name": "商店购买_儲值",
+            "entry": "商店购买_儲值",
+            "description": "自动购买储值商店中的礼包",
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ],
+            "group": [
+                "少女回战"
+            ],
+            "default_check": true
+        },
+        {
+            "name": "礼包购买_啟示錄",
+            "entry": "礼包购买_啟示錄",
+            "description": "自动购买啟示錄礼包",
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ],
+            "group": [
+                "少女回战"
+            ],
+            "default_check": true
+        },
+        {
+            "name": "礼包购买_午夜魅影",
+            "entry": "礼包购买_午夜魅影",
+            "default_check": true,
+            "description": "自动购买午夜魅影礼包",
+            "group": [
+                "少女回战"
+            ],
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ]
+        },
+        {
+            "name": "礼包购买_課後閑趣",
+            "entry": "礼包购买_課後閑趣",
+            "default_check": true,
+            "description": "自动购买課後閑趣礼包",
+            "group": [
+                "少女回战"
+            ],
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ]
+        },
+        {
+            "name": "礼包购买_缘聚桃源鄉",
+            "entry": "礼包购买_缘聚桃源鄉",
+            "description": "自动购买缘聚桃源鄉礼包",
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ],
+            "group": [
+                "少女回战"
+            ],
+            "default_check": true
+        },
+        {
+            "name": "礼包购买_紅顏若曦",
+            "entry": "礼包购买_紅顏若曦",
+            "description": "自动购买紅顏若曦礼包",
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ],
+            "group": [
+                "少女回战"
+            ],
+            "default_check": true
+        },
+        {
+            "name": "每日快速战斗",
+            "entry": "每日快速战斗",
+            "group": [
+                "少女回战"
+            ],
+            "default_check": true,
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ],
+            "description": "自动快速战斗，只使用大于12小时的仙果"
+        },
+        {
+            "name": "主线",
+            "entry": "主线",
+            "group": [
+                "少女回战"
+            ],
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ],
+            "description": "自动挑战主线"
+        },
+        {
+            "name": "啟示錄",
+            "entry": "啟示錄",
+            "description": "自动挑战啟示錄",
+            "group": [
+                "少女回战"
+            ],
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ]
+        },
+        {
+            "name": "留侯疑塚",
+            "entry": "留侯疑塚_挑战",
+            "description": "自动挑战留侯疑塚",
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ],
+            "group": [
+                "少女回战"
+            ]
+        },
+        {
+            "name": "抽卡_武将",
+            "entry": "抽卡_武将",
+            "description": "自动抽取武将，任务需要手动停止",
+            "group": [
+                "少女回战"
+            ],
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ]
+        },
+        {
+            "name": "抽卡_精选卡池",
+            "entry": "抽卡_精选卡池",
+            "description": "自动抽取精选卡池，任务需要手动停止",
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ],
+            "group": [
+                "少女回战"
+            ]
+        },
+        {
+            "name": "抽卡_塑靈",
+            "entry": "抽卡_塑靈",
+            "description": "自动抽取塑靈，任务需要手动停止",
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ],
+            "group": [
+                "少女回战"
+            ]
+        },
+        {
+            "name": "抽卡_超凡者",
+            "entry": "抽卡_超凡者",
+            "description": "自动抽取超凡者，任务需要手动停止",
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ],
+            "group": [
+                "少女回战"
+            ]
+        },
+        {
+            "name": "塑靈_降临",
+            "entry": "塑靈_降临",
+            "description": "在降临页面开始，任务需要手动停止",
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ],
+            "group": [
+                "少女回战"
+            ]
+        },
+        {
+            "name": "塑靈_淬炼",
+            "entry": "塑靈_淬炼",
+            "description": "在淬炼页面开始，任务需要手动停止",
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ],
+            "group": [
+                "少女回战"
+            ]
+        },
+        {
+            "name": "超凡者_契约",
+            "entry": "超凡者_契约",
+            "description": "在签订契约页面开始，任务需要手动停止",
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ],
+            "group": [
+                "少女回战"
+            ]
+        },
+        {
+            "name": "超凡者_训练",
+            "entry": "超凡者_训练",
+            "description": "在训练页面开始，任务需要手动停止",
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ],
+            "group": [
+                "少女回战"
+            ]
+        },
+        {
+            "name": "宝物升级",
+            "entry": "宝物升级",
+            "description": "在宝物突破页面开始，任务需要手动停止",
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "AOT"
+            ],
+            "group": [
+                "少女回战"
+            ]
+        }
+    ],
+    "group": [
+        {
+            "name": "少女回战",
+            "label": "少女回战",
+            "default_expand": true
+        }
+    ]
+}

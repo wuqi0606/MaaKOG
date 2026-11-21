@@ -1,0 +1,180 @@
+{
+    "$__mpe_config_活动奖励_深海奇旅": {
+        "$__mpe_code": {
+            "prefix": "",
+            "filePath": "E:\\.Workspace\\MAA\\MaaQXQ\\resource\\AOT\\pipeline\\活动奖励_深海奇旅.json",
+            "lastSyncTime": 1794392141844,
+            "coordinateMode": "absolute-v1",
+            "savedViewport": {
+                "x": -1106,
+                "y": 259,
+                "zoom": 0.38
+            },
+            "filename": "活动奖励_深海奇旅",
+            "version": "v2.1.1"
+        }
+    },
+    "$__mpe_external_主界面_活动奖励_深海奇旅": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3782,
+                "y": 771
+            }
+        }
+    },
+    "$__mpe_external_左侧最下_活动奖励_深海奇旅": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4128,
+                "y": 654
+            }
+        }
+    },
+    "主界面检测2_1": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "主界面检测.png"
+                ]
+            }
+        },
+        "next": [
+            "深海奇旅1",
+            "[JumpBack]左侧最下"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3791,
+                "y": 407
+            }
+        }
+    },
+    "深海奇旅1": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    144,
+                    118,
+                    570
+                ],
+                "expected": [
+                    "深海奇旅"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -20,
+                    0,
+                    0
+                ]
+            }
+        },
+        "timeout": 10000,
+        "next": [
+            "塞子数大于0"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4139,
+                "y": 282
+            }
+        }
+    },
+    "活动奖励_深海奇旅": {
+        "next": [
+            "主界面检测2_1",
+            "[JumpBack]主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3399,
+                "y": 481
+            }
+        }
+    },
+    "塞子数大于0": {
+        "recognition": {
+            "type": "Custom",
+            "param": {
+                "custom_recognition": "CompareNumbers",
+                "custom_recognition_param": {
+                    "operator": ">",
+                    "value": 0
+                },
+                "roi": [
+                    382,
+                    1083,
+                    74,
+                    33
+                ]
+            }
+        },
+        "anchor": "锚点_塞子数大于0",
+        "next": [
+            "深海奇旅_塞子6",
+            "[JumpBack]塞子列表/点击继续"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4505,
+                "y": 272
+            }
+        }
+    },
+    "塞子列表/点击继续": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    433,
+                    1040,
+                    2,
+                    2
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 4987,
+                "y": 536
+            }
+        }
+    },
+    "深海奇旅_塞子6": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "深海奇旅_塞子6.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[Anchor]锚点_塞子数大于0"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4969,
+                "y": 134
+            }
+        }
+    },
+    "$__mpe_anchor_锚点_塞子数大于0_活动奖励_深海奇旅": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5461,
+                "y": 103
+            }
+        }
+    }
+}

@@ -1,0 +1,228 @@
+{
+    "$__mpe_config_抽卡_超凡者": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795174555766,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\抽卡_超凡者.json",
+            "savedViewport": {
+                "x": -2339,
+                "y": 307,
+                "zoom": 0.44
+            },
+            "filename": "抽卡_超凡者",
+            "version": "v2.1.3"
+        }
+    },
+    "$__mpe_external_卡池下一个_抽卡_超凡者": {
+        "$__mpe_code": {
+            "position": {
+                "x": 6878,
+                "y": 151
+            }
+        }
+    },
+    "$__mpe_external_底部最左_抽卡_超凡者": {
+        "$__mpe_code": {
+            "position": {
+                "x": 6471,
+                "y": 336
+            }
+        }
+    },
+    "抽到2个_超凡者": {
+        "recognition": {
+            "type": "Custom",
+            "param": {
+                "custom_recognition": "CompareNumbers",
+                "custom_recognition_param": {
+                    "operator": ">",
+                    "separator": "/",
+                    "value": 1800
+                },
+                "roi": [
+                    286,
+                    795,
+                    149,
+                    40
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    670,
+                    1136,
+                    2,
+                    2
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7253,
+                "y": -383
+            }
+        }
+    },
+    "抽卡_入口_超凡者": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    628,
+                    231,
+                    62,
+                    32
+                ],
+                "expected": [
+                    "抽卡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "超凡者",
+            "[JumpBack]底部最左"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6082,
+                "y": -6
+            }
+        }
+    },
+    "抽卡点击_超凡者": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    430,
+                    1015,
+                    1,
+                    1
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 7252,
+                "y": -63
+            }
+        }
+    },
+    "未获得_超凡者": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    287,
+                    794,
+                    148,
+                    41
+                ],
+                "expected": [
+                    "/"
+                ]
+            }
+        },
+        "next": [
+            "抽到2个_超凡者",
+            "[JumpBack]抽卡点击_超凡者"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6857,
+                "y": -246
+            }
+        }
+    },
+    "超凡者": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    104,
+                    1165,
+                    608,
+                    104
+                ],
+                "template": [
+                    "抽卡_超凡者.png"
+                ],
+                "threshold": 0.8
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "锚点_超凡者",
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                8,
+                1061,
+                709,
+                209
+            ]
+        },
+        "timeout": 20000,
+        "rate_limit": 2000,
+        "next": [
+            "[JumpBack]未获得_超凡者",
+            "[JumpBack]卡池下一个"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6469,
+                "y": -202
+            }
+        }
+    },
+    "$__mpe_external_主界面_抽卡_超凡者": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5741,
+                "y": 357
+            }
+        }
+    },
+    "主界面检测_超凡者": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "主界面检测.png"
+                ]
+            }
+        },
+        "next": [
+            "抽卡_入口_超凡者"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5737,
+                "y": -10
+            }
+        }
+    },
+    "抽卡_超凡者": {
+        "next": [
+            "主界面检测_超凡者",
+            "[JumpBack]主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5375,
+                "y": 165
+            }
+        }
+    }
+}

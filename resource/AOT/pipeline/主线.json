@@ -1,0 +1,184 @@
+{
+    "$__mpe_config_主线": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795236058939,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\主线.json",
+            "savedViewport": {
+                "x": -1933,
+                "y": -232,
+                "zoom": 0.7
+            },
+            "filename": "主线",
+            "version": "v2.1.3"
+        }
+    },
+    "$__mpe_external_skip_主线": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4174,
+                "y": 656
+            }
+        }
+    },
+    "$__mpe_external_下一關_主线": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4179,
+                "y": 793
+            }
+        }
+    },
+    "$__mpe_external_主界面_主线": {
+        "$__mpe_code": {
+            "position": {
+                "x": 3083,
+                "y": 914
+            }
+        }
+    },
+    "$__mpe_external_挑戰關卡_主线": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4179,
+                "y": 375
+            }
+        }
+    },
+    "$__mpe_external_跳過劇情_主线": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4175,
+                "y": 528
+            }
+        }
+    },
+    "$__mpe_external_返回_主线": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4178,
+                "y": 954
+            }
+        }
+    },
+    "主界面检测_主线": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "主界面检测.png"
+                ]
+            }
+        },
+        "next": [
+            "冒险_主线"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3086,
+                "y": 586
+            }
+        }
+    },
+    "主线": {
+        "next": [
+            "主界面检测_主线",
+            "[JumpBack]主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2758,
+                "y": 714
+            }
+        }
+    },
+    "冒险_主线": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "冒险.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "开始挑戰關卡"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3420,
+                "y": 565
+            }
+        }
+    },
+    "开始挑戰關卡": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    302,
+                    1084,
+                    140,
+                    42
+                ],
+                "expected": [
+                    "挑戰關卡"
+                ]
+            }
+        },
+        "pre_delay": 1000,
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "[JumpBack]挑戰關卡",
+            "[JumpBack]跳過劇情",
+            "[JumpBack]skip",
+            "[JumpBack]下一關",
+            "返回",
+            "败北"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3772,
+                "y": 545
+            }
+        }
+    },
+    "败北": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "败北.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "StopTask"
+        },
+        "next": [
+            "返回入口"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4167,
+                "y": 1111
+            }
+        }
+    },
+    "$__mpe_external_返回入口_主线": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4508,
+                "y": 1190
+            }
+        }
+    }
+}
