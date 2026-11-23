@@ -1,62 +1,78 @@
 {
-    "$__mpe_config_礼包购买_啟示錄": {
+    "$__mpe_config_礼包购买_缘聚桃源鄉": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795250899227,
+            "lastSyncTime": 1795250930791,
             "isModifiedExternally": false,
             "isDeleted": false,
-            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\礼包购买_啟示錄.json",
+            "filePath": "E:\\.Workspace\\MAA\\MaaKOG\\resource\\KOG\\pipeline\\礼包购买_缘聚桃源鄉.json",
             "savedViewport": {
-                "x": -1502,
-                "y": 236,
+                "x": -1346,
+                "y": 294,
                 "zoom": 0.59
             },
-            "filename": "礼包购买_啟示錄",
+            "filename": "礼包购买_缘聚桃源鄉",
             "version": "v2.1.3"
         }
     },
-    "$__mpe_anchor_锚点_礼包页面_啟示錄_礼包购买_啟示錄": {
+    "$__mpe_anchor_锚点_礼包页面_缘聚桃源鄉_礼包购买_缘聚桃源鄉": {
         "$__mpe_code": {
             "position": {
-                "x": 5330,
-                "y": 194
+                "x": 5416,
+                "y": 187
             }
         }
     },
-    "$__mpe_external_主界面_礼包购买_啟示錄": {
+    "$__mpe_external_主界面_礼包购买_缘聚桃源鄉": {
         "$__mpe_code": {
             "position": {
-                "x": 3219,
-                "y": 534
+                "x": 3053,
+                "y": 523
             }
         }
     },
-    "$__mpe_external_活动礼包最下_礼包购买_啟示錄": {
+    "$__mpe_external_左侧最下_礼包购买_缘聚桃源鄉": {
         "$__mpe_code": {
             "position": {
-                "x": 4969,
-                "y": 264
+                "x": 3384,
+                "y": 393
             }
         }
     },
-    "$__mpe_external_確定要使用钻石_礼包购买_啟示錄": {
+    "$__mpe_external_底部最右_礼包购买_缘聚桃源鄉": {
         "$__mpe_code": {
             "position": {
-                "x": 5332,
-                "y": 67
+                "x": 4363,
+                "y": 432
             }
         }
     },
-    "$__mpe_external_返回入口_礼包购买_啟示錄": {
+    "$__mpe_external_活动礼包最下_礼包购买_缘聚桃源鄉": {
         "$__mpe_code": {
             "position": {
-                "x": 4972,
-                "y": 402
+                "x": 5064,
+                "y": 256
             }
         }
     },
-    "主界面检测_礼包购买_啟示錄": {
+    "$__mpe_external_確定要使用钻石_礼包购买_缘聚桃源鄉": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5410,
+                "y": 29
+            }
+        }
+    },
+    "$__mpe_external_返回入口_礼包购买_缘聚桃源鄉": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5069,
+                "y": 396
+            }
+        }
+    },
+    "主界面检测_缘聚桃源鄉": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -66,27 +82,28 @@
             }
         },
         "next": [
-            "啟示錄_礼包购买"
+            "缘聚桃源鄉",
+            "[JumpBack]左侧最下"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3226,
+                "x": 3053,
                 "y": 218
             }
         }
     },
-    "啟示錄_礼包购买": {
+    "心跳健身房": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    368,
-                    1245,
-                    106,
-                    29
+                    35,
+                    442,
+                    262,
+                    44
                 ],
                 "expected": [
-                    "啟示錄"
+                    "心跳健身房"
                 ]
             }
         },
@@ -95,7 +112,7 @@
             "param": {
                 "target_offset": [
                     0,
-                    -20,
+                    -75,
                     0,
                     0
                 ]
@@ -103,103 +120,43 @@
         },
         "post_delay": 1000,
         "next": [
-            "寶箱_啟示錄",
-            "[JumpBack]啟示錄_礼包购买"
+            "检测_活动页_缘聚桃源鄉",
+            "[JumpBack]心跳健身房"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3576,
-                "y": 175
+                "x": 3707,
+                "y": 75
             }
         }
     },
-    "寶箱_啟示錄": {
+    "检测_活动页_缘聚桃源鄉": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    316,
-                    932,
-                    88,
-                    52
+                    150,
+                    1238,
+                    550,
+                    37
                 ],
                 "expected": [
-                    "寶箱"
+                    "協力"
                 ]
             }
         },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    0,
-                    -20,
-                    0,
-                    0
-                ]
-            }
-        },
-        "post_delay": 1000,
         "next": [
-            "禮包__啟示錄",
-            "[JumpBack]寶箱_啟示錄"
+            "礼包_缘聚桃源鄉",
+            "[JumpBack]底部最右"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3925,
-                "y": 177
+                "x": 4034,
+                "y": 70
             }
         }
     },
-    "礼包购买_啟示錄": {
-        "next": [
-            "主界面检测_礼包购买_啟示錄",
-            "[JumpBack]主界面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 2870,
-                "y": 295
-            }
-        }
-    },
-    "礼包页面_啟示錄": {
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "ResetHitCount",
-                "custom_action_param": {
-                    "nodes": [
-                        "活动礼包最下"
-                    ]
-                }
-            }
-        },
-        "anchor": "锚点_礼包页面_啟示錄",
-        "post_wait_freezes": {
-            "time": 300,
-            "target": [
-                17,
-                377,
-                684,
-                785
-            ]
-        },
-        "timeout": 10000,
-        "rate_limit": 2000,
-        "next": [
-            "[JumpBack]钻石购买_啟示錄",
-            "[JumpBack]活动礼包最下",
-            "返回入口"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4590,
-                "y": 172
-            }
-        }
-    },
-    "禮包__啟示錄": {
+    "礼包_缘聚桃源鄉": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -221,16 +178,102 @@
             ]
         },
         "next": [
-            "礼包页面_啟示錄"
+            "礼包页面_缘聚桃源鄉"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4264,
-                "y": 181
+                "x": 4357,
+                "y": 66
             }
         }
     },
-    "钻石购买_啟示錄": {
+    "礼包购买_缘聚桃源鄉": {
+        "next": [
+            "主界面检测_缘聚桃源鄉",
+            "[JumpBack]主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 2706,
+                "y": 360
+            }
+        }
+    },
+    "礼包页面_缘聚桃源鄉": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "ResetHitCount",
+                "custom_action_param": {
+                    "nodes": [
+                        "活动礼包最下"
+                    ]
+                }
+            }
+        },
+        "anchor": "锚点_礼包页面_缘聚桃源鄉",
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                17,
+                377,
+                684,
+                785
+            ]
+        },
+        "timeout": 10000,
+        "rate_limit": 2000,
+        "next": [
+            "[JumpBack]钻石购买_缘聚桃源鄉",
+            "[JumpBack]活动礼包最下",
+            "返回入口"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4695,
+                "y": 51
+            }
+        }
+    },
+    "缘聚桃源鄉": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    144,
+                    118,
+                    570
+                ],
+                "expected": [
+                    "缘聚桃源鄉"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -20,
+                    0,
+                    0
+                ]
+            }
+        },
+        "post_delay": 1000,
+        "next": [
+            "心跳健身房",
+            "[JumpBack]缘聚桃源鄉"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3384,
+                "y": 75
+            }
+        }
+    },
+    "钻石购买_缘聚桃源鄉": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -252,20 +295,20 @@
         },
         "timeout": 10000,
         "next": [
-            "點擊繼續_啟示錄",
+            "點擊繼續_缘聚桃源鄉",
             "[JumpBack]確定要使用钻石"
         ],
         "on_error": [
-            "[Anchor]锚点_礼包页面_啟示錄"
+            "[Anchor]锚点_礼包页面_缘聚桃源鄉"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4964,
-                "y": -128
+                "x": 5059,
+                "y": -133
             }
         }
     },
-    "點擊繼續_啟示錄": {
+    "點擊繼續_缘聚桃源鄉": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -294,8 +337,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 5322,
-                "y": -251
+                "x": 5407,
+                "y": -303
             }
         }
     }

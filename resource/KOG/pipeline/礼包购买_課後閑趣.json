@@ -1,46 +1,46 @@
 {
-    "$__mpe_config_礼包购买_轮换": {
+    "$__mpe_config_礼包购买_課後閑趣": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795248052881,
+            "lastSyncTime": 1795247728042,
             "isModifiedExternally": false,
             "isDeleted": false,
-            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\礼包购买_轮换.json",
+            "filePath": "E:\\.Workspace\\MAA\\MaaKOG\\resource\\KOG\\pipeline\\礼包购买_課後閑趣.json",
             "savedViewport": {
-                "x": -1795,
-                "y": 301,
+                "x": -1724,
+                "y": 314,
                 "zoom": 0.67
             },
-            "filename": "礼包购买_轮换",
+            "filename": "礼包购买_課後閑趣",
             "version": "v2.1.3"
         }
     },
-    "$__mpe_anchor_锚点_礼包页面_轮换_礼包购买_轮换": {
+    "$__mpe_anchor_锚点_礼包页面_轮换_礼包购买_課後閑趣": {
         "$__mpe_code": {
             "position": {
-                "x": 5374,
-                "y": 158
+                "x": 5370,
+                "y": 16
             }
         }
     },
-    "$__mpe_external_主界面_礼包购买_轮换": {
+    "$__mpe_external_主界面_礼包购买_課後閑趣": {
         "$__mpe_code": {
             "position": {
-                "x": 3359,
-                "y": 436
+                "x": 3374,
+                "y": 442
             }
         }
     },
-    "$__mpe_external_左侧最下_礼包购买_轮换": {
+    "$__mpe_external_左侧最下_礼包购买_課後閑趣": {
         "$__mpe_code": {
             "position": {
-                "x": 3674,
-                "y": 369
+                "x": 3695,
+                "y": 386
             }
         }
     },
-    "$__mpe_external_底部最右_礼包购买_轮换": {
+    "$__mpe_external_底部最右_礼包购买_課後閑趣": {
         "$__mpe_code": {
             "position": {
                 "x": 4294,
@@ -48,31 +48,31 @@
             }
         }
     },
-    "$__mpe_external_活动礼包最下_礼包购买_轮换": {
+    "$__mpe_external_活动礼包最下_礼包购买_課後閑趣": {
         "$__mpe_code": {
             "position": {
-                "x": 4974,
-                "y": 190
+                "x": 4978,
+                "y": 42
             }
         }
     },
-    "$__mpe_external_確定要使用钻石_礼包购买_轮换": {
+    "$__mpe_external_確定要使用钻石_礼包购买_課後閑趣": {
         "$__mpe_code": {
             "position": {
-                "x": 5375,
-                "y": 43
+                "x": 5371,
+                "y": -99
             }
         }
     },
-    "$__mpe_external_返回入口_礼包购买_轮换": {
+    "$__mpe_external_返回入口_礼包购买_課後閑趣": {
         "$__mpe_code": {
             "position": {
-                "x": 4967,
-                "y": 335
+                "x": 4975,
+                "y": 181
             }
         }
     },
-    "主界面检测_轮换": {
+    "主界面检测_課後閑趣": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -82,17 +82,17 @@
             }
         },
         "next": [
-            "轮换",
+            "課後閑趣",
             "[JumpBack]左侧最下"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3360,
-                "y": 153
+                "x": 3371,
+                "y": 149
             }
         }
     },
-    "检测_活动页_轮换": {
+    "检测_活动页_課後閑趣": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -108,17 +108,17 @@
             }
         },
         "next": [
-            "礼包_轮换",
+            "礼包_課後閑趣",
             "[JumpBack]底部最右"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3984,
-                "y": 80
+                "x": 4000,
+                "y": 84
             }
         }
     },
-    "礼包_轮换": {
+    "礼包_課後閑趣": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -131,7 +131,7 @@
             "type": "Click"
         },
         "next": [
-            "礼包页面_轮换"
+            "礼包页面_課後閑趣"
         ],
         "$__mpe_code": {
             "position": {
@@ -140,19 +140,19 @@
             }
         }
     },
-    "礼包购买_轮换": {
+    "礼包购买_課後閑趣": {
         "next": [
-            "主界面检测_轮换",
+            "主界面检测_課後閑趣",
             "[JumpBack]主界面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3035,
-                "y": 265
+                "x": 3067,
+                "y": 292
             }
         }
     },
-    "礼包页面_轮换": {
+    "礼包页面_課後閑趣": {
         "action": {
             "type": "Custom",
             "param": {
@@ -177,7 +177,7 @@
         "timeout": 10000,
         "rate_limit": 2000,
         "next": [
-            "[JumpBack]钻石购买_轮换",
+            "[JumpBack]钻石购买_課後閑趣",
             "[JumpBack]活动礼包最下",
             "返回入口"
         ],
@@ -188,7 +188,7 @@
             }
         }
     },
-    "轮换": {
+    "課後閑趣": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -199,7 +199,7 @@
                     570
                 ],
                 "expected": [
-                    "轮换"
+                    "課後閑趣"
                 ]
             }
         },
@@ -215,18 +215,18 @@
             }
         },
         "next": [
-            "检测_活动页_轮换",
-            "[JumpBack]轮换"
+            "检测_活动页_課後閑趣",
+            "[JumpBack]課後閑趣"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3675,
-                "y": 60
+                "x": 3687,
+                "y": 72
             }
         },
         "post_delay": 1000
     },
-    "钻石购买_轮换": {
+    "钻石购买_課後閑趣": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -248,7 +248,7 @@
         },
         "timeout": 10000,
         "next": [
-            "點擊繼續_轮换",
+            "點擊繼續_課後閑趣",
             "[JumpBack]確定要使用钻石"
         ],
         "on_error": [
@@ -256,12 +256,12 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4965,
-                "y": -222
+                "x": 4967,
+                "y": -362
             }
         }
     },
-    "點擊繼續_轮换": {
+    "點擊繼續_課後閑趣": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -290,8 +290,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 5353,
-                "y": -296
+                "x": 5359,
+                "y": -454
             }
         }
     }

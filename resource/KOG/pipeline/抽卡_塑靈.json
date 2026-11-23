@@ -1,0 +1,227 @@
+{
+    "$__mpe_config_抽卡_塑靈": {
+        "$__mpe_code": {
+            "prefix": "",
+            "coordinateMode": "absolute-v1",
+            "lastSyncTime": 1795174509287,
+            "isModifiedExternally": false,
+            "isDeleted": false,
+            "filePath": "E:\\.Workspace\\MAA\\MaaKOG\\resource\\KOG\\pipeline\\抽卡_塑靈.json",
+            "savedViewport": {
+                "x": -2464,
+                "y": 346,
+                "zoom": 0.44
+            },
+            "filename": "抽卡_塑靈",
+            "version": "v2.1.3"
+        }
+    },
+    "$__mpe_external_卡池下一个_抽卡_塑靈": {
+        "$__mpe_code": {
+            "position": {
+                "x": 6908,
+                "y": 294
+            }
+        }
+    },
+    "$__mpe_external_底部最左_抽卡_塑靈": {
+        "$__mpe_code": {
+            "position": {
+                "x": 6463,
+                "y": 418
+            }
+        }
+    },
+    "塑靈": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "roi": [
+                    104,
+                    1165,
+                    608,
+                    104
+                ],
+                "template": [
+                    "抽卡_塑靈.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "anchor": "锚点_塑靈",
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                8,
+                1061,
+                709,
+                209
+            ]
+        },
+        "timeout": 20000,
+        "rate_limit": 2000,
+        "next": [
+            "[JumpBack]未获得_塑靈",
+            "[JumpBack]卡池下一个"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6456,
+                "y": -113
+            }
+        }
+    },
+    "抽到2个_塑靈": {
+        "recognition": {
+            "type": "Custom",
+            "param": {
+                "custom_recognition": "CompareNumbers",
+                "custom_recognition_param": {
+                    "operator": ">",
+                    "separator": "/",
+                    "value": 1800
+                },
+                "roi": [
+                    286,
+                    795,
+                    149,
+                    40
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    670,
+                    1136,
+                    2,
+                    2
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7341,
+                "y": -248
+            }
+        }
+    },
+    "抽卡_入口_塑靈": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    628,
+                    231,
+                    62,
+                    32
+                ],
+                "expected": [
+                    "抽卡"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "next": [
+            "塑靈",
+            "[JumpBack]底部最左"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6005,
+                "y": 103
+            }
+        }
+    },
+    "抽卡点击_塑靈": {
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    430,
+                    1015,
+                    1,
+                    1
+                ]
+            }
+        },
+        "repeat": 2,
+        "repeat_delay": 1000,
+        "$__mpe_code": {
+            "position": {
+                "x": 7352,
+                "y": 40
+            }
+        }
+    },
+    "未获得_塑靈": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    287,
+                    794,
+                    148,
+                    41
+                ],
+                "expected": [
+                    "/"
+                ]
+            }
+        },
+        "next": [
+            "抽到2个_塑靈",
+            "[JumpBack]抽卡点击_塑靈"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6897,
+                "y": -122
+            }
+        }
+    },
+    "$__mpe_external_主界面_抽卡_塑靈": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5628,
+                "y": 465
+            }
+        }
+    },
+    "主界面检测_塑靈": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "主界面检测.png"
+                ]
+            }
+        },
+        "next": [
+            "抽卡_入口_塑靈"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5624,
+                "y": 98
+            }
+        }
+    },
+    "抽卡_塑靈": {
+        "next": [
+            "主界面检测_塑靈",
+            "[JumpBack]主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 5271,
+                "y": 276
+            }
+        }
+    }
+}

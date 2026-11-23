@@ -1,4 +1,4 @@
-"""MaaAOT agent 启动入口。
+"""MaaKOG agent 启动入口。
 
 maafw 环境保障：优先用已安装版本（win 发布包已内置 Python + maafw），
 缺失时自动 pip 安装锁定版本（mac/linux/android/源码场景）。
@@ -28,16 +28,16 @@ def _ensure_maafw() -> bool:
     try:
         import maa  # noqa: F401
     except ImportError:
-        print("[MaaAOT] maafw 未安装，准备自动安装", flush=True)
+        print("[MaaKOG] maafw 未安装，准备自动安装", flush=True)
     else:
         try:
             from importlib.metadata import PackageNotFoundError, version
 
             installed = version("maafw")
             if installed.lstrip("vV").startswith("5."):
-                print(f"[MaaAOT] maafw {installed} 已就绪", flush=True)
+                print(f"[MaaKOG] maafw {installed} 已就绪", flush=True)
                 return True
-            print(f"[MaaAOT] maafw 版本 {installed} 不兼容，需安装 {_MAAFW_REQUIRED_VERSION}", flush=True)
+            print(f"[MaaKOG] maafw 版本 {installed} 不兼容，需安装 {_MAAFW_REQUIRED_VERSION}", flush=True)
         except PackageNotFoundError:
             pass
 
@@ -46,7 +46,7 @@ def _ensure_maafw() -> bool:
         subprocess.run([python_exe, "-m", "pip", "--version"], capture_output=True, check=True, timeout=30)
     except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired):
         print(
-            "[MaaAOT] pip 不可用，无法自动安装 maafw。\n"
+            "[MaaKOG] pip 不可用，无法自动安装 maafw。\n"
             "请手动安装 Python 并勾选 Add Python to PATH，然后执行：\n"
             f"  {python_exe} -m ensurepip\n"
             f"  {python_exe} -m pip install maafw=={_MAAFW_REQUIRED_VERSION}",
@@ -65,14 +65,14 @@ def _ensure_maafw() -> bool:
         ("清华镜像 + --user", base + ["--user"] + mirror),
     ]
     for label, cmd in strategies:
-        print(f"[MaaAOT] 安装 maafw（{label}）...", flush=True)
+        print(f"[MaaKOG] 安装 maafw（{label}）...", flush=True)
         try:
             subprocess.check_call(cmd, timeout=_PIP_INSTALL_TIMEOUT)
         except subprocess.TimeoutExpired:
-            print(f"[MaaAOT] {label} 超时，尝试下一个...", flush=True)
+            print(f"[MaaKOG] {label} 超时，尝试下一个...", flush=True)
             continue
         except subprocess.CalledProcessError:
-            print(f"[MaaAOT] {label} 失败，尝试下一个...", flush=True)
+            print(f"[MaaKOG] {label} 失败，尝试下一个...", flush=True)
             continue
         # 安装后校验并刷新模块缓存（本进程后续要 import maa）
         import importlib
@@ -80,11 +80,11 @@ def _ensure_maafw() -> bool:
         importlib.invalidate_caches()
         for mod in [k for k in list(sys.modules) if k == "maa" or k.startswith("maa.")]:
             del sys.modules[mod]
-        print(f"[MaaAOT] maafw 安装成功（{label}）", flush=True)
+        print(f"[MaaKOG] maafw 安装成功（{label}）", flush=True)
         return True
 
     print(
-        f"[MaaAOT] maafw 自动安装全部失败。请手动执行：\n"
+        f"[MaaKOG] maafw 自动安装全部失败。请手动执行：\n"
         f"  {python_exe} -m pip install maafw=={_MAAFW_REQUIRED_VERSION}",
         file=sys.stderr,
         flush=True,

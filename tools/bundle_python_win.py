@@ -22,7 +22,7 @@ PYTHON_URL = (
 
 
 def download(url, dest):
-    req = urllib.request.Request(url, headers={"User-Agent": "MaaAOT-build"})
+    req = urllib.request.Request(url, headers={"User-Agent": "MaaKOG-build"})
     with urllib.request.urlopen(req, timeout=120) as resp, open(dest, "wb") as f:
         shutil.copyfileobj(resp, f)
     print(f"downloaded {url} -> {dest} ({os.path.getsize(dest)} bytes)")
@@ -30,7 +30,7 @@ def download(url, dest):
 
 def main():
     install_python = sys.argv[1]
-    tmp = tempfile.mkdtemp(prefix="maaot-python-")
+    tmp = tempfile.mkdtemp(prefix="maakog-python-")
     try:
         py_zip = os.path.join(tmp, "python.zip")
         download(PYTHON_URL, py_zip)

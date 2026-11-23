@@ -160,7 +160,7 @@ jobs:
 
       - uses: actions/upload-artifact@v7
         with:
-          name: MaaAOT-${{ matrix.os }}-${{ matrix.arch }}
+          name: MaaKOG-${{ matrix.os }}-${{ matrix.arch }}
           path: "install"
 
   changelog:

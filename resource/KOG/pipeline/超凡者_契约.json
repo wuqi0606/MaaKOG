@@ -1,22 +1,22 @@
 {
-    "$__mpe_config_塑靈_降临": {
+    "$__mpe_config_超凡者_契约": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795251159511,
+            "lastSyncTime": 1794397239887,
             "isModifiedExternally": false,
             "isDeleted": false,
-            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\塑靈_降临.json",
+            "filePath": "E:\\.Workspace\\MAA\\MaaKOG\\resource\\KOG\\pipeline\\超凡者_契约.json",
             "savedViewport": {
-                "x": -3848,
-                "y": 353,
-                "zoom": 0.59
+                "x": -3502,
+                "y": 265,
+                "zoom": 0.5
             },
-            "filename": "塑靈_降临",
-            "version": "v2.1.3"
+            "filename": "超凡者_契约",
+            "version": "v2.1.1"
         }
     },
-    "$__mpe_anchor_锚点_塑靈_降临_塑靈_降临": {
+    "$__mpe_anchor_锚点_超凡者_契约_超凡者_契约": {
         "$__mpe_code": {
             "position": {
                 "x": 8690,
@@ -24,7 +24,7 @@
             }
         }
     },
-    "$__mpe_external_點擊任意位置繼續_塑靈_降临": {
+    "$__mpe_external_點擊任意位置繼續_超凡者_契约": {
         "$__mpe_code": {
             "position": {
                 "x": 7953,
@@ -32,7 +32,7 @@
             }
         }
     },
-    "塑靈_下一个": {
+    "契约_下一个": {
         "action": {
             "type": "Click",
             "param": {
@@ -45,20 +45,20 @@
             }
         },
         "next": [
-            "[Anchor]锚点_塑靈_降临"
+            "[Anchor]锚点_超凡者_契约"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 8290,
-                "y": -174
+                "x": 8310,
+                "y": -196
             }
         }
     },
-    "塑靈_降临": {
-        "anchor": "锚点_塑靈_降临",
+    "超凡者_契约": {
+        "anchor": "锚点_超凡者_契约",
         "next": [
-            "星月辉石",
-            "降臨",
+            "超凡者_契约满级",
+            "契約進階",
             "[JumpBack]點擊任意位置繼續"
         ],
         "$__mpe_code": {
@@ -68,37 +68,37 @@
             }
         }
     },
-    "星月辉石": {
+    "超凡者_契约满级": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
                 "template": [
-                    "星月辉石.png"
+                    "超凡者_契约满级.png"
                 ]
             }
         },
         "next": [
-            "塑靈_下一个"
+            "契约_下一个"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7945,
-                "y": -193
+                "x": 7930,
+                "y": -191
             }
         }
     },
-    "降臨": {
+    "契約進階": {
         "recognition": {
             "type": "OCR",
             "param": {
                 "roi": [
-                    299,
+                    289,
                     1086,
-                    119,
+                    143,
                     49
                 ],
                 "expected": [
-                    "降臨"
+                    "契約進階"
                 ]
             }
         },
@@ -106,12 +106,12 @@
             "type": "Click"
         },
         "next": [
-            "[Anchor]锚点_塑靈_降临"
+            "[Anchor]锚点_超凡者_契约"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7936,
-                "y": 155
+                "x": 7948,
+                "y": 165
             }
         }
     }

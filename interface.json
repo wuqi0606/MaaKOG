@@ -1,11 +1,11 @@
 {
     "interface_version": 2,
-    "name": "MaaAOT",
-    "description": "少女回战（AOT）自动化脚本，基于 MaaFramework 构建。",
+    "name": "MaaKOG",
+    "description": "少女回战（KOG）自动化脚本，基于 MaaFramework 构建。",
     "contact": "GitHub: wuqi0606",
     "license": "MIT",
-    "welcome": "欢迎使用 MaaAOT！少女回战日常自动化。",
-    "github": "https://github.com/wuqi0606/MaaAOT",
+    "welcome": "欢迎使用 MaaKOG！少女回战日常自动化。",
+    "github": "https://github.com/wuqi0606/MaaKOG",
     "version": "1.0.0",
     "controller": [
         {
@@ -16,10 +16,10 @@
     ],
     "resource": [
         {
-            "name": "AOT",
+            "name": "KOG",
             "path": [
                 "resource/base",
-                "resource/AOT"
+                "resource/KOG"
             ],
             "controller": [
                 "安卓端（模拟器）"
@@ -46,7 +46,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ],
             "group": [
                 "少女回战"
@@ -61,7 +61,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ],
             "group": [
                 "少女回战"
@@ -80,7 +80,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ]
         },
         {
@@ -95,7 +95,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ]
         },
         {
@@ -106,7 +106,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ],
             "group": [
                 "少女回战"
@@ -121,7 +121,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ],
             "group": [
                 "少女回战"
@@ -139,7 +139,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ],
             "description": "自动快速战斗，只使用大于12小时的仙果"
         },
@@ -153,7 +153,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ],
             "description": "自动挑战主线"
         },
@@ -168,7 +168,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ]
         },
         {
@@ -179,7 +179,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ],
             "group": [
                 "少女回战"
@@ -196,7 +196,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ]
         },
         {
@@ -207,7 +207,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ],
             "group": [
                 "少女回战"
@@ -221,7 +221,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ],
             "group": [
                 "少女回战"
@@ -235,7 +235,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ],
             "group": [
                 "少女回战"
@@ -249,7 +249,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ],
             "group": [
                 "少女回战"
@@ -263,7 +263,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ],
             "group": [
                 "少女回战"
@@ -277,7 +277,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ],
             "group": [
                 "少女回战"
@@ -291,7 +291,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ],
             "group": [
                 "少女回战"
@@ -305,7 +305,7 @@
                 "安卓端（模拟器）"
             ],
             "resource": [
-                "AOT"
+                "KOG"
             ],
             "group": [
                 "少女回战"

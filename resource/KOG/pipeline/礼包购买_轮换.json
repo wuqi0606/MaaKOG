@@ -1,78 +1,78 @@
 {
-    "$__mpe_config_礼包购买_天下布武": {
+    "$__mpe_config_礼包购买_轮换": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795250910712,
+            "lastSyncTime": 1795248052881,
             "isModifiedExternally": false,
             "isDeleted": false,
-            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\礼包购买_天下布武.json",
+            "filePath": "E:\\.Workspace\\MAA\\MaaKOG\\resource\\KOG\\pipeline\\礼包购买_轮换.json",
             "savedViewport": {
-                "x": -1532,
-                "y": 140,
-                "zoom": 0.59
+                "x": -1795,
+                "y": 301,
+                "zoom": 0.67
             },
-            "filename": "礼包购买_天下布武",
+            "filename": "礼包购买_轮换",
             "version": "v2.1.3"
         }
     },
-    "$__mpe_anchor_锚点_礼包页面_天下布武_礼包购买_天下布武": {
+    "$__mpe_anchor_锚点_礼包页面_轮换_礼包购买_轮换": {
         "$__mpe_code": {
             "position": {
-                "x": 5428,
-                "y": 316
+                "x": 5374,
+                "y": 158
             }
         }
     },
-    "$__mpe_external_主界面_礼包购买_天下布武": {
+    "$__mpe_external_主界面_礼包购买_轮换": {
         "$__mpe_code": {
             "position": {
-                "x": 3320,
-                "y": 720
+                "x": 3359,
+                "y": 436
             }
         }
     },
-    "$__mpe_external_左侧最下_礼包购买_天下布武": {
+    "$__mpe_external_左侧最下_礼包购买_轮换": {
         "$__mpe_code": {
             "position": {
-                "x": 3686,
-                "y": 684
+                "x": 3674,
+                "y": 369
             }
         }
     },
-    "$__mpe_external_底部最右_礼包购买_天下布武": {
+    "$__mpe_external_底部最右_礼包购买_轮换": {
         "$__mpe_code": {
             "position": {
-                "x": 4376,
-                "y": 592
+                "x": 4294,
+                "y": 287
             }
         }
     },
-    "$__mpe_external_活动礼包最下_礼包购买_天下布武": {
+    "$__mpe_external_活动礼包最下_礼包购买_轮换": {
         "$__mpe_code": {
             "position": {
-                "x": 5072,
-                "y": 361
+                "x": 4974,
+                "y": 190
             }
         }
     },
-    "$__mpe_external_確定要使用钻石_礼包购买_天下布武": {
+    "$__mpe_external_確定要使用钻石_礼包购买_轮换": {
         "$__mpe_code": {
             "position": {
-                "x": 5417,
-                "y": 195
+                "x": 5375,
+                "y": 43
             }
         }
     },
-    "$__mpe_external_返回入口_礼包购买_天下布武": {
+    "$__mpe_external_返回入口_礼包购买_轮换": {
         "$__mpe_code": {
             "position": {
-                "x": 5071,
-                "y": 516
+                "x": 4967,
+                "y": 335
             }
         }
     },
-    "主界面检测_天下布武": {
+    "主界面检测_轮换": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -82,55 +82,17 @@
             }
         },
         "next": [
-            "天下布武",
+            "轮换",
             "[JumpBack]左侧最下"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3318,
-                "y": 405
+                "x": 3360,
+                "y": 153
             }
         }
     },
-    "天下布武": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    0,
-                    144,
-                    118,
-                    570
-                ],
-                "expected": [
-                    "天下布武"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    0,
-                    -20,
-                    0,
-                    0
-                ]
-            }
-        },
-        "next": [
-            "检测_活动页_天下布武",
-            "[JumpBack]天下布武"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3692,
-                "y": 376
-            }
-        },
-        "post_delay": 1000
-    },
-    "检测_活动页_天下布武": {
+    "检测_活动页_轮换": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -146,17 +108,17 @@
             }
         },
         "next": [
-            "礼包_天下布武",
+            "礼包_轮换",
             "[JumpBack]底部最右"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4036,
-                "y": 384
+                "x": 3984,
+                "y": 80
             }
         }
     },
-    "礼包_天下布武": {
+    "礼包_轮换": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -168,38 +130,29 @@
         "action": {
             "type": "Click"
         },
-        "post_wait_freezes": {
-            "time": 300,
-            "target": [
-                17,
-                377,
-                684,
-                785
-            ]
-        },
         "next": [
-            "礼包页面_天下布武"
+            "礼包页面_轮换"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4366,
-                "y": 252
+                "x": 4290,
+                "y": -24
             }
         }
     },
-    "礼包购买_天下布武": {
+    "礼包购买_轮换": {
         "next": [
-            "主界面检测_天下布武",
+            "主界面检测_轮换",
             "[JumpBack]主界面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2998,
-                "y": 560
+                "x": 3035,
+                "y": 265
             }
         }
     },
-    "礼包页面_天下布武": {
+    "礼包页面_轮换": {
         "action": {
             "type": "Custom",
             "param": {
@@ -211,22 +164,69 @@
                 }
             }
         },
-        "anchor": "锚点_礼包页面_天下布武",
+        "anchor": "锚点_礼包页面_轮换",
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                17,
+                377,
+                684,
+                785
+            ]
+        },
         "timeout": 10000,
         "rate_limit": 2000,
         "next": [
-            "[JumpBack]钻石购买_天下布武",
+            "[JumpBack]钻石购买_轮换",
             "[JumpBack]活动礼包最下",
             "返回入口"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4702,
-                "y": 247
+                "x": 4634,
+                "y": -56
             }
         }
     },
-    "钻石购买_天下布武": {
+    "轮换": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    144,
+                    118,
+                    570
+                ],
+                "expected": [
+                    "轮换"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -20,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "检测_活动页_轮换",
+            "[JumpBack]轮换"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3675,
+                "y": 60
+            }
+        },
+        "post_delay": 1000
+    },
+    "钻石购买_轮换": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -248,20 +248,20 @@
         },
         "timeout": 10000,
         "next": [
-            "點擊繼續_天下布武",
+            "點擊繼續_轮换",
             "[JumpBack]確定要使用钻石"
         ],
         "on_error": [
-            "[Anchor]锚点_礼包页面_天下布武"
+            "[Anchor]锚点_礼包页面_轮换"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5066,
-                "y": -24
+                "x": 4965,
+                "y": -222
             }
         }
     },
-    "點擊繼續_天下布武": {
+    "點擊繼續_轮换": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -290,8 +290,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 5412,
-                "y": -131
+                "x": 5353,
+                "y": -296
             }
         }
     }

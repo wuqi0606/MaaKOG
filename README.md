@@ -1,6 +1,6 @@
-# MaaAOT
+# MaaKOG
 
-少女回战（AOT）日常自动化助手。
+少女回战（KOG）日常自动化助手。
 
 基于 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 构建，免费开源。
 
@@ -32,7 +32,7 @@
 
 ## 开始使用
 
-1. 到 [Releases](https://github.com/wuqi0606/MaaAOT/releases) 下载最新版本的压缩包。
+1. 到 [Releases](https://github.com/wuqi0606/MaaKOG/releases) 下载最新版本的压缩包。
 2. 解压后，**先以管理员身份运行 `DependencySetup_依赖库安装_win.bat`**（Windows），自动安装 VC++ 和 .NET 运行库。
 3. 运行 `MFAAvalonia.exe`。
 

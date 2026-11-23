@@ -1,38 +1,38 @@
 {
-    "$__mpe_config_抽卡_精选卡池": {
+    "$__mpe_config_抽卡_武将": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795174415045,
+            "lastSyncTime": 1795174130945,
             "isModifiedExternally": false,
             "isDeleted": false,
-            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\抽卡_精选卡池.json",
+            "filePath": "E:\\.Workspace\\MAA\\MaaKOG\\resource\\KOG\\pipeline\\抽卡_武将.json",
             "savedViewport": {
-                "x": -2380,
-                "y": 303,
+                "x": -2290,
+                "y": 261,
                 "zoom": 0.44
             },
-            "filename": "抽卡_精选卡池",
+            "filename": "抽卡_武将",
             "version": "v2.1.3"
         }
     },
-    "$__mpe_external_卡池下一个_抽卡_精选卡池": {
+    "$__mpe_external_卡池下一个_抽卡_武将": {
         "$__mpe_code": {
             "position": {
-                "x": 7004,
-                "y": 306
+                "x": 6960,
+                "y": 288
             }
         }
     },
-    "$__mpe_external_底部最左_抽卡_精选卡池": {
+    "$__mpe_external_底部最左_抽卡_武将": {
         "$__mpe_code": {
             "position": {
-                "x": 6571,
-                "y": 462
+                "x": 6495,
+                "y": 526
             }
         }
     },
-    "抽到1个_精选卡池": {
+    "抽到1个_武将": {
         "recognition": {
             "type": "Custom",
             "param": {
@@ -61,16 +61,16 @@
             }
         },
         "next": [
-            "返回_精选卡池"
+            "返回_武将"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7426,
-                "y": -383
+                "x": 7387,
+                "y": -399
             }
         }
     },
-    "抽卡_入口_精选卡池": {
+    "抽卡_入口_武将": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -89,17 +89,17 @@
             "type": "Click"
         },
         "next": [
-            "精选卡池",
+            "武将",
             "[JumpBack]底部最左"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6063,
+                "x": 6058,
                 "y": 162
             }
         }
     },
-    "抽卡点击_精选卡池": {
+    "抽卡点击_武将": {
         "action": {
             "type": "Click",
             "param": {
@@ -115,12 +115,12 @@
         "repeat_delay": 1000,
         "$__mpe_code": {
             "position": {
-                "x": 7444,
-                "y": 181
+                "x": 7364,
+                "y": 218
             }
         }
     },
-    "未获得_精选卡池": {
+    "未获得_武将": {
         "recognition": {
             "type": "Custom",
             "param": {
@@ -138,18 +138,18 @@
             }
         },
         "next": [
-            "抽到1个_精选卡池",
-            "返回_精选卡池",
-            "[JumpBack]抽卡点击_精选卡池"
+            "抽到1个_武将",
+            "返回_武将",
+            "[JumpBack]抽卡点击_武将"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7003,
-                "y": -84
+                "x": 6950,
+                "y": -79
             }
         }
     },
-    "精选卡池": {
+    "武将": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -160,14 +160,14 @@
                     104
                 ],
                 "template": [
-                    "抽卡_精选卡池.png"
+                    "抽卡_武将.png"
                 ]
             }
         },
         "action": {
             "type": "Click"
         },
-        "anchor": "锚点_精选卡池",
+        "anchor": "锚点_武将",
         "post_wait_freezes": {
             "time": 300,
             "target": [
@@ -180,17 +180,17 @@
         "timeout": 20000,
         "rate_limit": 2000,
         "next": [
-            "[JumpBack]未获得_精选卡池",
+            "[JumpBack]未获得_武将",
             "[JumpBack]卡池下一个"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6556,
-                "y": -63
+                "x": 6492,
+                "y": 8
             }
         }
     },
-    "返回_精选卡池": {
+    "返回_武将": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -219,20 +219,20 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 7771,
-                "y": -110
+                "x": 7746,
+                "y": -98
             }
         }
     },
-    "$__mpe_external_主界面_抽卡_精选卡池": {
+    "$__mpe_external_主界面_抽卡_武将": {
         "$__mpe_code": {
             "position": {
-                "x": 5702,
-                "y": 562
+                "x": 5682,
+                "y": 528
             }
         }
     },
-    "主界面检测_精选卡池": {
+    "主界面检测_武将": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -242,24 +242,24 @@
             }
         },
         "next": [
-            "抽卡_入口_精选卡池"
+            "抽卡_入口_武将"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5711,
-                "y": 186
+                "x": 5678,
+                "y": 161
             }
         }
     },
-    "抽卡_精选卡池": {
+    "抽卡_武将": {
         "next": [
-            "主界面检测_精选卡池",
+            "主界面检测_武将",
             "[JumpBack]主界面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5326,
-                "y": 377
+                "x": 5316,
+                "y": 336
             }
         }
     }

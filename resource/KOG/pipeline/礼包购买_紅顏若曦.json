@@ -1,78 +1,78 @@
 {
-    "$__mpe_config_礼包购买_午夜魅影": {
+    "$__mpe_config_礼包购买_紅顏若曦": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795247594414,
+            "lastSyncTime": 1795247649332,
             "isModifiedExternally": false,
             "isDeleted": false,
-            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\礼包购买_午夜魅影.json",
+            "filePath": "E:\\.Workspace\\MAA\\MaaKOG\\resource\\KOG\\pipeline\\礼包购买_紅顏若曦.json",
             "savedViewport": {
-                "x": -1389,
-                "y": 289,
-                "zoom": 0.59
+                "x": -1826,
+                "y": 13,
+                "zoom": 0.67
             },
-            "filename": "礼包购买_午夜魅影",
+            "filename": "礼包购买_紅顏若曦",
             "version": "v2.1.3"
         }
     },
-    "$__mpe_anchor_锚点_礼包页面_轮换_礼包购买_午夜魅影": {
+    "$__mpe_anchor_锚点_礼包页面_紅顏若曦_礼包购买_紅顏若曦": {
         "$__mpe_code": {
             "position": {
-                "x": 5374,
-                "y": 158
+                "x": 5416,
+                "y": 342
             }
         }
     },
-    "$__mpe_external_主界面_礼包购买_午夜魅影": {
+    "$__mpe_external_主界面_礼包购买_紅顏若曦": {
         "$__mpe_code": {
             "position": {
-                "x": 3149,
-                "y": 493
+                "x": 3484,
+                "y": 738
             }
         }
     },
-    "$__mpe_external_左侧最下_礼包购买_午夜魅影": {
+    "$__mpe_external_左侧最下_礼包购买_紅顏若曦": {
         "$__mpe_code": {
             "position": {
-                "x": 3617,
-                "y": 399
+                "x": 3785,
+                "y": 671
             }
         }
     },
-    "$__mpe_external_底部最右_礼包购买_午夜魅影": {
+    "$__mpe_external_底部最右_礼包购买_紅顏若曦": {
         "$__mpe_code": {
             "position": {
-                "x": 4294,
-                "y": 287
+                "x": 4384,
+                "y": 566
             }
         }
     },
-    "$__mpe_external_活动礼包最下_礼包购买_午夜魅影": {
+    "$__mpe_external_活动礼包最下_礼包购买_紅顏若曦": {
         "$__mpe_code": {
             "position": {
-                "x": 4974,
-                "y": 190
+                "x": 5079,
+                "y": 385
             }
         }
     },
-    "$__mpe_external_確定要使用钻石_礼包购买_午夜魅影": {
+    "$__mpe_external_確定要使用钻石_礼包购买_紅顏若曦": {
         "$__mpe_code": {
             "position": {
-                "x": 5375,
-                "y": 43
+                "x": 5417,
+                "y": 213
             }
         }
     },
-    "$__mpe_external_返回入口_礼包购买_午夜魅影": {
+    "$__mpe_external_返回入口_礼包购买_紅顏若曦": {
         "$__mpe_code": {
             "position": {
-                "x": 4967,
-                "y": 335
+                "x": 5088,
+                "y": 556
             }
         }
     },
-    "主界面检测_午夜魅影": {
+    "主界面检测_紅顏若曦": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -82,55 +82,17 @@
             }
         },
         "next": [
-            "午夜魅影",
+            "紅顏若曦",
             "[JumpBack]左侧最下"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3188,
-                "y": 144
+                "x": 3474,
+                "y": 441
             }
         }
     },
-    "午夜魅影": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    0,
-                    270,
-                    118,
-                    470
-                ],
-                "expected": [
-                    "午夜魅影"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    0,
-                    -20,
-                    0,
-                    0
-                ]
-            }
-        },
-        "post_delay": 1000,
-        "next": [
-            "检测_活动页_午夜魅影",
-            "[JumpBack]午夜魅影"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3603,
-                "y": 61
-            }
-        }
-    },
-    "检测_活动页_午夜魅影": {
+    "检测_活动页_紅顏若曦": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -146,17 +108,17 @@
             }
         },
         "next": [
-            "礼包_午夜魅影",
+            "礼包_紅顏若曦",
             "[JumpBack]底部最右"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3957,
-                "y": 37
+                "x": 4078,
+                "y": 362
             }
         }
     },
-    "礼包_午夜魅影": {
+    "礼包_紅顏若曦": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -168,29 +130,38 @@
         "action": {
             "type": "Click"
         },
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                17,
+                377,
+                684,
+                785
+            ]
+        },
         "next": [
-            "礼包页面_午夜魅影"
+            "礼包页面_紅顏若曦"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4290,
-                "y": -24
+                "x": 4381,
+                "y": 253
             }
         }
     },
-    "礼包购买_午夜魅影": {
+    "礼包购买_紅顏若曦": {
         "next": [
-            "主界面检测_午夜魅影",
+            "主界面检测_紅顏若曦",
             "[JumpBack]主界面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 2796,
-                "y": 283
+                "x": 3170,
+                "y": 555
             }
         }
     },
-    "礼包页面_午夜魅影": {
+    "礼包页面_紅顏若曦": {
         "action": {
             "type": "Custom",
             "param": {
@@ -202,7 +173,7 @@
                 }
             }
         },
-        "anchor": "锚点_礼包页面_轮换",
+        "anchor": "锚点_礼包页面_紅顏若曦",
         "post_wait_freezes": {
             "time": 300,
             "target": [
@@ -215,18 +186,56 @@
         "timeout": 10000,
         "rate_limit": 2000,
         "next": [
-            "[JumpBack]钻石购买_午夜魅影",
+            "[JumpBack]钻石购买_紅顏若曦",
             "[JumpBack]活动礼包最下",
             "返回入口"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4612,
-                "y": -56
+                "x": 4695,
+                "y": 219
             }
         }
     },
-    "钻石购买_午夜魅影": {
+    "紅顏若曦": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    0,
+                    144,
+                    118,
+                    570
+                ],
+                "expected": [
+                    "紅顏若曦"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target_offset": [
+                    0,
+                    -20,
+                    0,
+                    0
+                ]
+            }
+        },
+        "next": [
+            "检测_活动页_紅顏若曦",
+            "[JumpBack]紅顏若曦"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3781,
+                "y": 350
+            }
+        },
+        "post_delay": 1000
+    },
+    "钻石购买_紅顏若曦": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -248,20 +257,20 @@
         },
         "timeout": 10000,
         "next": [
-            "點擊繼續_午夜魅影",
+            "點擊繼續_紅顏若曦",
             "[JumpBack]確定要使用钻石"
         ],
         "on_error": [
-            "[Anchor]锚点_礼包页面_轮换"
+            "[Anchor]锚点_礼包页面_紅顏若曦"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4965,
-                "y": -222
+                "x": 5066,
+                "y": -27
             }
         }
     },
-    "點擊繼續_午夜魅影": {
+    "點擊繼續_紅顏若曦": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -290,8 +299,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 5353,
-                "y": -296
+                "x": 5421,
+                "y": -119
             }
         }
     }

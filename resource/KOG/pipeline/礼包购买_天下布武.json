@@ -1,78 +1,78 @@
 {
-    "$__mpe_config_礼包购买_深海奇旅": {
+    "$__mpe_config_礼包购买_天下布武": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795250919695,
+            "lastSyncTime": 1795250910712,
             "isModifiedExternally": false,
             "isDeleted": false,
-            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\礼包购买_深海奇旅.json",
+            "filePath": "E:\\.Workspace\\MAA\\MaaKOG\\resource\\KOG\\pipeline\\礼包购买_天下布武.json",
             "savedViewport": {
-                "x": -1589,
-                "y": 216,
+                "x": -1532,
+                "y": 140,
                 "zoom": 0.59
             },
-            "filename": "礼包购买_深海奇旅",
+            "filename": "礼包购买_天下布武",
             "version": "v2.1.3"
         }
     },
-    "$__mpe_anchor_锚点_礼包页面_深海奇旅_礼包购买_深海奇旅": {
+    "$__mpe_anchor_锚点_礼包页面_天下布武_礼包购买_天下布武": {
         "$__mpe_code": {
             "position": {
-                "x": 5420,
-                "y": 277
-            }
-        }
-    },
-    "$__mpe_external_主界面_礼包购买_深海奇旅": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3383,
-                "y": 697
-            }
-        }
-    },
-    "$__mpe_external_左侧最下_礼包购买_深海奇旅": {
-        "$__mpe_code": {
-            "position": {
-                "x": 3752,
-                "y": 589
-            }
-        }
-    },
-    "$__mpe_external_底部最右_礼包购买_深海奇旅": {
-        "$__mpe_code": {
-            "position": {
-                "x": 4377,
-                "y": 519
-            }
-        }
-    },
-    "$__mpe_external_活动礼包最下_礼包购买_深海奇旅": {
-        "$__mpe_code": {
-            "position": {
-                "x": 5084,
+                "x": 5428,
                 "y": 316
             }
         }
     },
-    "$__mpe_external_確定要使用钻石_礼包购买_深海奇旅": {
+    "$__mpe_external_主界面_礼包购买_天下布武": {
         "$__mpe_code": {
             "position": {
-                "x": 5415,
-                "y": 160
+                "x": 3320,
+                "y": 720
             }
         }
     },
-    "$__mpe_external_返回入口_礼包购买_深海奇旅": {
+    "$__mpe_external_左侧最下_礼包购买_天下布武": {
         "$__mpe_code": {
             "position": {
-                "x": 5092,
-                "y": 481
+                "x": 3686,
+                "y": 684
             }
         }
     },
-    "主界面检测_深海奇旅": {
+    "$__mpe_external_底部最右_礼包购买_天下布武": {
+        "$__mpe_code": {
+            "position": {
+                "x": 4376,
+                "y": 592
+            }
+        }
+    },
+    "$__mpe_external_活动礼包最下_礼包购买_天下布武": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5072,
+                "y": 361
+            }
+        }
+    },
+    "$__mpe_external_確定要使用钻石_礼包购买_天下布武": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5417,
+                "y": 195
+            }
+        }
+    },
+    "$__mpe_external_返回入口_礼包购买_天下布武": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5071,
+                "y": 516
+            }
+        }
+    },
+    "主界面检测_天下布武": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -82,43 +82,17 @@
             }
         },
         "next": [
-            "深海奇旅",
+            "天下布武",
             "[JumpBack]左侧最下"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3373,
-                "y": 375
+                "x": 3318,
+                "y": 405
             }
         }
     },
-    "检测_活动页_深海奇旅": {
-        "recognition": {
-            "type": "OCR",
-            "param": {
-                "roi": [
-                    150,
-                    1238,
-                    550,
-                    37
-                ],
-                "expected": [
-                    "協力"
-                ]
-            }
-        },
-        "next": [
-            "礼包_深海奇旅",
-            "[JumpBack]底部最右"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4061,
-                "y": 289
-            }
-        }
-    },
-    "深海奇旅": {
+    "天下布武": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -129,7 +103,7 @@
                     570
                 ],
                 "expected": [
-                    "深海奇旅"
+                    "天下布武"
                 ]
             }
         },
@@ -145,18 +119,44 @@
             }
         },
         "next": [
-            "检测_活动页_深海奇旅",
-            "[JumpBack]深海奇旅"
+            "检测_活动页_天下布武",
+            "[JumpBack]天下布武"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3747,
-                "y": 265
+                "x": 3692,
+                "y": 376
             }
         },
         "post_delay": 1000
     },
-    "礼包_深海奇旅": {
+    "检测_活动页_天下布武": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    150,
+                    1238,
+                    550,
+                    37
+                ],
+                "expected": [
+                    "協力"
+                ]
+            }
+        },
+        "next": [
+            "礼包_天下布武",
+            "[JumpBack]底部最右"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4036,
+                "y": 384
+            }
+        }
+    },
+    "礼包_天下布武": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -178,28 +178,28 @@
             ]
         },
         "next": [
-            "礼包页面_深海奇旅"
+            "礼包页面_天下布武"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4380,
-                "y": 166
+                "x": 4366,
+                "y": 252
             }
         }
     },
-    "礼包购买_深海奇旅": {
+    "礼包购买_天下布武": {
         "next": [
-            "主界面检测_深海奇旅",
+            "主界面检测_天下布武",
             "[JumpBack]主界面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3051,
-                "y": 495
+                "x": 2998,
+                "y": 560
             }
         }
     },
-    "礼包页面_深海奇旅": {
+    "礼包页面_天下布武": {
         "action": {
             "type": "Custom",
             "param": {
@@ -211,22 +211,22 @@
                 }
             }
         },
-        "anchor": "锚点_礼包页面_深海奇旅",
+        "anchor": "锚点_礼包页面_天下布武",
         "timeout": 10000,
         "rate_limit": 2000,
         "next": [
-            "[JumpBack]钻石购买_深海奇旅",
+            "[JumpBack]钻石购买_天下布武",
             "[JumpBack]活动礼包最下",
             "返回入口"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4709,
-                "y": 142
+                "x": 4702,
+                "y": 247
             }
         }
     },
-    "钻石购买_深海奇旅": {
+    "钻石购买_天下布武": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -248,20 +248,20 @@
         },
         "timeout": 10000,
         "next": [
-            "點擊繼續_深海奇旅",
+            "點擊繼續_天下布武",
             "[JumpBack]確定要使用钻石"
         ],
         "on_error": [
-            "[Anchor]锚点_礼包页面_深海奇旅"
+            "[Anchor]锚点_礼包页面_天下布武"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5076,
-                "y": -80
+                "x": 5066,
+                "y": -24
             }
         }
     },
-    "點擊繼續_深海奇旅": {
+    "點擊繼續_天下布武": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -291,7 +291,7 @@
         "$__mpe_code": {
             "position": {
                 "x": 5412,
-                "y": -154
+                "y": -131
             }
         }
     }

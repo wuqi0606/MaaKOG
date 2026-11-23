@@ -1,78 +1,78 @@
 {
-    "$__mpe_config_礼包购买_課後閑趣": {
+    "$__mpe_config_礼包购买_深海奇旅": {
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795247728042,
+            "lastSyncTime": 1795250919695,
             "isModifiedExternally": false,
             "isDeleted": false,
-            "filePath": "E:\\.Workspace\\MAA\\MaaAOT\\resource\\AOT\\pipeline\\礼包购买_課後閑趣.json",
+            "filePath": "E:\\.Workspace\\MAA\\MaaKOG\\resource\\KOG\\pipeline\\礼包购买_深海奇旅.json",
             "savedViewport": {
-                "x": -1724,
-                "y": 314,
-                "zoom": 0.67
+                "x": -1589,
+                "y": 216,
+                "zoom": 0.59
             },
-            "filename": "礼包购买_課後閑趣",
+            "filename": "礼包购买_深海奇旅",
             "version": "v2.1.3"
         }
     },
-    "$__mpe_anchor_锚点_礼包页面_轮换_礼包购买_課後閑趣": {
+    "$__mpe_anchor_锚点_礼包页面_深海奇旅_礼包购买_深海奇旅": {
         "$__mpe_code": {
             "position": {
-                "x": 5370,
-                "y": 16
+                "x": 5420,
+                "y": 277
             }
         }
     },
-    "$__mpe_external_主界面_礼包购买_課後閑趣": {
+    "$__mpe_external_主界面_礼包购买_深海奇旅": {
         "$__mpe_code": {
             "position": {
-                "x": 3374,
-                "y": 442
+                "x": 3383,
+                "y": 697
             }
         }
     },
-    "$__mpe_external_左侧最下_礼包购买_課後閑趣": {
+    "$__mpe_external_左侧最下_礼包购买_深海奇旅": {
         "$__mpe_code": {
             "position": {
-                "x": 3695,
-                "y": 386
+                "x": 3752,
+                "y": 589
             }
         }
     },
-    "$__mpe_external_底部最右_礼包购买_課後閑趣": {
+    "$__mpe_external_底部最右_礼包购买_深海奇旅": {
         "$__mpe_code": {
             "position": {
-                "x": 4294,
-                "y": 287
+                "x": 4377,
+                "y": 519
             }
         }
     },
-    "$__mpe_external_活动礼包最下_礼包购买_課後閑趣": {
+    "$__mpe_external_活动礼包最下_礼包购买_深海奇旅": {
         "$__mpe_code": {
             "position": {
-                "x": 4978,
-                "y": 42
+                "x": 5084,
+                "y": 316
             }
         }
     },
-    "$__mpe_external_確定要使用钻石_礼包购买_課後閑趣": {
+    "$__mpe_external_確定要使用钻石_礼包购买_深海奇旅": {
         "$__mpe_code": {
             "position": {
-                "x": 5371,
-                "y": -99
+                "x": 5415,
+                "y": 160
             }
         }
     },
-    "$__mpe_external_返回入口_礼包购买_課後閑趣": {
+    "$__mpe_external_返回入口_礼包购买_深海奇旅": {
         "$__mpe_code": {
             "position": {
-                "x": 4975,
-                "y": 181
+                "x": 5092,
+                "y": 481
             }
         }
     },
-    "主界面检测_課後閑趣": {
+    "主界面检测_深海奇旅": {
         "recognition": {
             "type": "TemplateMatch",
             "param": {
@@ -82,17 +82,17 @@
             }
         },
         "next": [
-            "課後閑趣",
+            "深海奇旅",
             "[JumpBack]左侧最下"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3371,
-                "y": 149
+                "x": 3373,
+                "y": 375
             }
         }
     },
-    "检测_活动页_課後閑趣": {
+    "检测_活动页_深海奇旅": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -108,87 +108,17 @@
             }
         },
         "next": [
-            "礼包_課後閑趣",
+            "礼包_深海奇旅",
             "[JumpBack]底部最右"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4000,
-                "y": 84
+                "x": 4061,
+                "y": 289
             }
         }
     },
-    "礼包_課後閑趣": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "礼包.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "next": [
-            "礼包页面_課後閑趣"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4290,
-                "y": -24
-            }
-        }
-    },
-    "礼包购买_課後閑趣": {
-        "next": [
-            "主界面检测_課後閑趣",
-            "[JumpBack]主界面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 3067,
-                "y": 292
-            }
-        }
-    },
-    "礼包页面_課後閑趣": {
-        "action": {
-            "type": "Custom",
-            "param": {
-                "custom_action": "ResetHitCount",
-                "custom_action_param": {
-                    "nodes": [
-                        "活动礼包最下"
-                    ]
-                }
-            }
-        },
-        "anchor": "锚点_礼包页面_轮换",
-        "post_wait_freezes": {
-            "time": 300,
-            "target": [
-                17,
-                377,
-                684,
-                785
-            ]
-        },
-        "timeout": 10000,
-        "rate_limit": 2000,
-        "next": [
-            "[JumpBack]钻石购买_課後閑趣",
-            "[JumpBack]活动礼包最下",
-            "返回入口"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 4634,
-                "y": -56
-            }
-        }
-    },
-    "課後閑趣": {
+    "深海奇旅": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -199,7 +129,7 @@
                     570
                 ],
                 "expected": [
-                    "課後閑趣"
+                    "深海奇旅"
                 ]
             }
         },
@@ -215,18 +145,88 @@
             }
         },
         "next": [
-            "检测_活动页_課後閑趣",
-            "[JumpBack]課後閑趣"
+            "检测_活动页_深海奇旅",
+            "[JumpBack]深海奇旅"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 3687,
-                "y": 72
+                "x": 3747,
+                "y": 265
             }
         },
         "post_delay": 1000
     },
-    "钻石购买_課後閑趣": {
+    "礼包_深海奇旅": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "礼包.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                17,
+                377,
+                684,
+                785
+            ]
+        },
+        "next": [
+            "礼包页面_深海奇旅"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4380,
+                "y": 166
+            }
+        }
+    },
+    "礼包购买_深海奇旅": {
+        "next": [
+            "主界面检测_深海奇旅",
+            "[JumpBack]主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 3051,
+                "y": 495
+            }
+        }
+    },
+    "礼包页面_深海奇旅": {
+        "action": {
+            "type": "Custom",
+            "param": {
+                "custom_action": "ResetHitCount",
+                "custom_action_param": {
+                    "nodes": [
+                        "活动礼包最下"
+                    ]
+                }
+            }
+        },
+        "anchor": "锚点_礼包页面_深海奇旅",
+        "timeout": 10000,
+        "rate_limit": 2000,
+        "next": [
+            "[JumpBack]钻石购买_深海奇旅",
+            "[JumpBack]活动礼包最下",
+            "返回入口"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 4709,
+                "y": 142
+            }
+        }
+    },
+    "钻石购买_深海奇旅": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -248,20 +248,20 @@
         },
         "timeout": 10000,
         "next": [
-            "點擊繼續_課後閑趣",
+            "點擊繼續_深海奇旅",
             "[JumpBack]確定要使用钻石"
         ],
         "on_error": [
-            "[Anchor]锚点_礼包页面_轮换"
+            "[Anchor]锚点_礼包页面_深海奇旅"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4967,
-                "y": -362
+                "x": 5076,
+                "y": -80
             }
         }
     },
-    "點擊繼續_課後閑趣": {
+    "點擊繼續_深海奇旅": {
         "recognition": {
             "type": "OCR",
             "param": {
@@ -290,8 +290,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 5359,
-                "y": -454
+                "x": 5412,
+                "y": -154
             }
         }
     }
