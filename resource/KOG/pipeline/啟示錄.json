@@ -3,14 +3,14 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795251148966,
+            "lastSyncTime": 1795782207521,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "E:\\.Workspace\\MAA\\MaaKOG\\resource\\KOG\\pipeline\\啟示錄.json",
             "savedViewport": {
-                "x": -3531,
-                "y": 213,
-                "zoom": 0.59
+                "x": -3515,
+                "y": 170,
+                "zoom": 0.51
             },
             "filename": "啟示錄",
             "version": "v2.1.3"
@@ -170,12 +170,13 @@
         "timeout": 60000,
         "rate_limit": 3000,
         "next": [
-            "等待戰鬥结束"
+            "等待戰鬥结束",
+            "戰鬥页面"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7929,
-                "y": 511
+                "x": 7945,
+                "y": 512
             }
         }
     },
@@ -199,8 +200,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 8322,
-                "y": 549
+                "x": 8344,
+                "y": 565
             }
         }
     }
