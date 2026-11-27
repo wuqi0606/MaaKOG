@@ -81,6 +81,34 @@
                 ]
             }
         },
+        "action": {
+            "type": "Swipe",
+            "param": {
+                "begin": [
+                    60,
+                    200,
+                    2,
+                    2
+                ],
+                "end": [
+                    [
+                        60,
+                        700,
+                        2,
+                        2
+                    ]
+                ]
+            }
+        },
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                22,
+                144,
+                75,
+                570
+            ]
+        },
         "next": [
             "深海奇旅",
             "[JumpBack]左侧最下"

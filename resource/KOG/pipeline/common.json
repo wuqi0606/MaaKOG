@@ -3,17 +3,83 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795233923421,
+            "lastSyncTime": 1795766861428,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "E:\\.Workspace\\MAA\\MaaKOG\\resource\\KOG\\pipeline\\common.json",
             "savedViewport": {
-                "x": -2291,
-                "y": -648,
-                "zoom": 0.44
+                "x": -3436,
+                "y": -1474,
+                "zoom": 0.57
             },
             "filename": "common",
             "version": "v2.1.3"
+        }
+    },
+    "優惠大回禮": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    104,
+                    399,
+                    508,
+                    113
+                ],
+                "expected": [
+                    "優惠大回禮"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    661,
+                    86,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7202,
+                "y": 1994
+            }
+        }
+    },
+    "優惠大回禮_主界面": {
+        "recognition": {
+            "type": "OCR",
+            "param": {
+                "roi": [
+                    104,
+                    399,
+                    508,
+                    113
+                ],
+                "expected": [
+                    "優惠大回禮"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click",
+            "param": {
+                "target": [
+                    661,
+                    86,
+                    1,
+                    1
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7267,
+                "y": 3514
+            }
         }
     },
     "skip": {
@@ -76,6 +142,45 @@
             }
         }
     },
+    "主界面": {
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                1,
+                1174,
+                718,
+                105
+            ]
+        },
+        "next": [
+            "阀门_主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6466,
+                "y": 2955
+            }
+        }
+    },
+    "主界面_主界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "主界面.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7271,
+                "y": 3235
+            }
+        }
+    },
     "主界面_返回": {
         "recognition": {
             "type": "TemplateMatch",
@@ -90,8 +195,24 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 7229,
-                "y": 2009
+                "x": 7203,
+                "y": 1715
+            }
+        }
+    },
+    "主界面检测_主界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "主界面检测.png"
+                ]
+            }
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7270,
+                "y": 2958
             }
         }
     },
@@ -109,8 +230,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 7235,
-                "y": 1703
+                "x": 7211,
+                "y": 1099
             }
         }
     },
@@ -120,8 +241,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 7704,
-                "y": 1889
+                "x": 7634,
+                "y": 1121
             }
         }
     },
@@ -496,7 +617,7 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6356,
+                "x": 6363,
                 "y": 1729
             }
         }
@@ -515,8 +636,50 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 7239,
-                "y": 1431
+                "x": 7208,
+                "y": 1436
+            }
+        }
+    },
+    "返回按钮_主界面": {
+        "recognition": {
+            "type": "TemplateMatch",
+            "param": {
+                "template": [
+                    "返回按钮.png"
+                ]
+            }
+        },
+        "action": {
+            "type": "Click"
+        },
+        "$__mpe_code": {
+            "position": {
+                "x": 7270,
+                "y": 2683
+            }
+        }
+    },
+    "阀门_主界面": {
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                8,
+                1196,
+                702,
+                80
+            ]
+        },
+        "next": [
+            "[JumpBack]返回按钮_主界面",
+            "主界面检测_主界面",
+            "主界面_主界面",
+            "優惠大回禮_主界面"
+        ],
+        "$__mpe_code": {
+            "position": {
+                "x": 6821,
+                "y": 2953
             }
         }
     },
@@ -531,15 +694,16 @@
             ]
         },
         "next": [
-            "返回按钮",
             "主界面检测_返回",
+            "返回按钮",
             "主界面_返回",
+            "優惠大回禮",
             "任务结束"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6735,
-                "y": 1727
+                "x": 6751,
+                "y": 1711
             }
         }
     },
@@ -566,102 +730,6 @@
             "position": {
                 "x": 7290,
                 "y": -177
-            }
-        }
-    },
-    "主界面_主界面": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "主界面.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 7297,
-                "y": 2923
-            }
-        }
-    },
-    "主界面检测_主界面": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "主界面检测.png"
-                ]
-            }
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 7294,
-                "y": 2646
-            }
-        }
-    },
-    "主界面": {
-        "post_wait_freezes": {
-            "time": 300,
-            "target": [
-                1,
-                1174,
-                718,
-                105
-            ]
-        },
-        "next": [
-            "阀门_主界面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6410,
-                "y": 2654
-            }
-        }
-    },
-    "返回按钮_主界面": {
-        "recognition": {
-            "type": "TemplateMatch",
-            "param": {
-                "template": [
-                    "返回按钮.png"
-                ]
-            }
-        },
-        "action": {
-            "type": "Click"
-        },
-        "$__mpe_code": {
-            "position": {
-                "x": 7293,
-                "y": 2356
-            }
-        }
-    },
-    "阀门_主界面": {
-        "post_wait_freezes": {
-            "time": 300,
-            "target": [
-                8,
-                1196,
-                702,
-                80
-            ]
-        },
-        "next": [
-            "[JumpBack]返回按钮_主界面",
-            "主界面检测_主界面",
-            "主界面_主界面"
-        ],
-        "$__mpe_code": {
-            "position": {
-                "x": 6814,
-                "y": 2654
             }
         }
     }

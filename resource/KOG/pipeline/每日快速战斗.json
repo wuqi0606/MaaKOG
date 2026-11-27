@@ -3,24 +3,32 @@
         "$__mpe_code": {
             "prefix": "",
             "coordinateMode": "absolute-v1",
-            "lastSyncTime": 1795322425206,
+            "lastSyncTime": 1795769099214,
             "isModifiedExternally": false,
             "isDeleted": false,
             "filePath": "E:\\.Workspace\\MAA\\MaaKOG\\resource\\KOG\\pipeline\\每日快速战斗.json",
             "savedViewport": {
-                "x": -2119,
-                "y": 166,
-                "zoom": 0.45
+                "x": -4020,
+                "y": -573,
+                "zoom": 0.75
             },
             "filename": "每日快速战斗",
             "version": "v2.1.3"
         }
     },
+    "$__mpe_anchor_锚点_免费次数_每日快速战斗": {
+        "$__mpe_code": {
+            "position": {
+                "x": 5893,
+                "y": 299
+            }
+        }
+    },
     "$__mpe_anchor_仙果上次_每日快速战斗": {
         "$__mpe_code": {
             "position": {
-                "x": 7108,
-                "y": 1314
+                "x": 7090,
+                "y": 1354
             }
         }
     },
@@ -43,8 +51,8 @@
     "$__mpe_external_點擊任意位置繼續_每日快速战斗": {
         "$__mpe_code": {
             "position": {
-                "x": 5899,
-                "y": 130
+                "x": 5905,
+                "y": 112
             }
         }
     },
@@ -85,13 +93,14 @@
         "action": {
             "type": "Click"
         },
+        "post_delay": 1000,
         "next": [
             "[JumpBack]阀门_仙果點擊繼續"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6375,
-                "y": 1204
+                "x": 6389,
+                "y": 1200
             }
         }
     },
@@ -145,8 +154,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5751,
-                "y": 1191
+                "x": 5746,
+                "y": 1186
             }
         }
     },
@@ -185,8 +194,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 4851,
-                "y": 1121
+                "x": 4863,
+                "y": 1314
             }
         }
     },
@@ -210,7 +219,7 @@
         },
         "next": [
             "加速次数等于0",
-            "[JumpBack]仙果_最右"
+            "仙果_最右"
         ],
         "$__mpe_code": {
             "position": {
@@ -239,8 +248,8 @@
         },
         "$__mpe_code": {
             "position": {
-                "x": 7110,
-                "y": 1054
+                "x": 7089,
+                "y": 1117
             }
         }
     },
@@ -263,6 +272,15 @@
             "type": "Click"
         },
         "anchor": "仙果上次",
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                42,
+                305,
+                640,
+                494
+            ]
+        },
         "next": [
             "仙果_數量選擇",
             "道具加速次數已用盡",
@@ -270,8 +288,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5263,
-                "y": 1215
+                "x": 5261,
+                "y": 1327
             }
         }
     },
@@ -294,6 +312,15 @@
             "type": "Click"
         },
         "anchor": "仙果上次",
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                42,
+                305,
+                640,
+                494
+            ]
+        },
         "next": [
             "仙果_數量選擇",
             "道具加速次數已用盡",
@@ -301,8 +328,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5263,
-                "y": 1907
+                "x": 5258,
+                "y": 2112
             }
         }
     },
@@ -325,6 +352,15 @@
             "type": "Click"
         },
         "anchor": "仙果上次",
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                42,
+                305,
+                640,
+                494
+            ]
+        },
         "next": [
             "仙果_數量選擇",
             "道具加速次數已用盡",
@@ -332,8 +368,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5263,
-                "y": 892
+                "x": 5270,
+                "y": 927
             }
         }
     },
@@ -356,6 +392,15 @@
             "type": "Click"
         },
         "anchor": "仙果上次",
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                42,
+                305,
+                640,
+                494
+            ]
+        },
         "next": [
             "仙果_數量選擇",
             "仙果使用_12h",
@@ -363,8 +408,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5263,
-                "y": 1538
+                "x": 5265,
+                "y": 1705
             }
         }
     },
@@ -387,6 +432,15 @@
             "type": "Click"
         },
         "anchor": "仙果上次",
+        "post_wait_freezes": {
+            "time": 300,
+            "target": [
+                42,
+                305,
+                640,
+                494
+            ]
+        },
         "next": [
             "仙果_數量選擇",
             "道具加速次數已用盡",
@@ -470,12 +524,12 @@
         "repeat": 10,
         "repeat_delay": 200,
         "next": [
-            "大于1"
+            "免费次数使用"
         ],
         "$__mpe_code": {
             "position": {
                 "x": 4860,
-                "y": 125
+                "y": 140
             }
         }
     },
@@ -507,50 +561,32 @@
             }
         }
     },
-    "大于1": {
+    "免费次数使用": {
         "recognition": {
-            "type": "Custom",
+            "type": "TemplateMatch",
             "param": {
-                "custom_recognition": "CompareNumbers",
-                "custom_recognition_param": {
-                    "operator": ">=",
-                    "separator": "/",
-                    "value": 1
-                },
                 "roi": [
-                    321,
-                    570,
-                    82,
-                    35
+                    250,
+                    633,
+                    220,
+                    83
+                ],
+                "template": [
+                    "金元宝.png"
                 ]
             }
         },
         "action": {
-            "type": "Click",
-            "param": {
-                "target_offset": [
-                    0,
-                    90,
-                    0,
-                    0
-                ]
-            }
+            "type": "Click"
         },
+        "post_delay": 1000,
         "next": [
             "[JumpBack]阀门_點擊繼續"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5202,
+                "x": 5192,
                 "y": 136
-            }
-        }
-    },
-    "完成一次": {
-        "$__mpe_code": {
-            "position": {
-                "x": 5894,
-                "y": 264
             }
         }
     },
@@ -621,8 +657,9 @@
         "action": {
             "type": "Click"
         },
+        "anchor": "锚点_免费次数",
         "next": [
-            "[JumpBack]免费次数大于0",
+            "免费次数大于0",
             "仙果_每日快速战斗"
         ],
         "$__mpe_code": {
@@ -663,8 +700,8 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5738,
-                "y": 1553
+                "x": 5744,
+                "y": 1578
             }
         }
     },
@@ -684,14 +721,14 @@
         ],
         "$__mpe_code": {
             "position": {
-                "x": 6700,
-                "y": 1174
+                "x": 6702,
+                "y": 1204
             }
         }
     },
     "阀门_點擊繼續": {
         "post_wait_freezes": {
-            "time": 300,
+            "time": 500,
             "target": [
                 10,
                 550,
@@ -701,12 +738,12 @@
         },
         "next": [
             "點擊任意位置繼續",
-            "完成一次"
+            "[Anchor]锚点_免费次数"
         ],
         "$__mpe_code": {
             "position": {
-                "x": 5564,
-                "y": 150
+                "x": 5533,
+                "y": 144
             }
         }
     }

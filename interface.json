@@ -49,7 +49,7 @@
                 "KOG"
             ],
             "group": [
-                "少女回战"
+                "日常"
             ],
             "default_check": true
         },
@@ -64,9 +64,24 @@
                 "KOG"
             ],
             "group": [
-                "少女回战"
+                "日常"
             ],
             "default_check": true
+        },
+        {
+            "name": "礼包购买_沈魚落雁",
+            "entry": "礼包购买_沈魚落雁",
+            "description": "自动购买沈魚落雁礼包",
+            "default_check": true,
+            "group": [
+                "日常"
+            ],
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "KOG"
+            ]
         },
         {
             "name": "礼包购买_午夜魅影",
@@ -74,7 +89,7 @@
             "default_check": true,
             "description": "自动购买午夜魅影礼包",
             "group": [
-                "少女回战"
+                "日常"
             ],
             "controller": [
                 "安卓端（模拟器）"
@@ -89,7 +104,7 @@
             "default_check": true,
             "description": "自动购买課後閑趣礼包",
             "group": [
-                "少女回战"
+                "日常"
             ],
             "controller": [
                 "安卓端（模拟器）"
@@ -109,7 +124,7 @@
                 "KOG"
             ],
             "group": [
-                "少女回战"
+                "日常"
             ],
             "default_check": true
         },
@@ -124,15 +139,30 @@
                 "KOG"
             ],
             "group": [
-                "少女回战"
+                "日常"
             ],
             "default_check": true
+        },
+        {
+            "name": "活动奖励_沈魚落雁",
+            "entry": "活动奖励_沈魚落雁",
+            "description": "进行沈魚落雁活动小游戏",
+            "default_check": false,
+            "group": [
+                "日常"
+            ],
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "KOG"
+            ]
         },
         {
             "name": "每日快速战斗",
             "entry": "每日快速战斗",
             "group": [
-                "少女回战"
+                "日常"
             ],
             "default_check": true,
             "controller": [
@@ -144,10 +174,25 @@
             "description": "自动快速战斗，只使用大于12小时的仙果"
         },
         {
+            "name": "啟示錄",
+            "entry": "啟示錄",
+            "description": "自动挑战啟示錄",
+            "group": [
+                "日常"
+            ],
+            "controller": [
+                "安卓端（模拟器）"
+            ],
+            "resource": [
+                "KOG"
+            ],
+            "default_check": true
+        },
+        {
             "name": "主线",
             "entry": "主线",
             "group": [
-                "少女回战"
+                "日常"
             ],
             "controller": [
                 "安卓端（模拟器）"
@@ -156,20 +201,6 @@
                 "KOG"
             ],
             "description": "自动挑战主线"
-        },
-        {
-            "name": "啟示錄",
-            "entry": "啟示錄",
-            "description": "自动挑战啟示錄",
-            "group": [
-                "少女回战"
-            ],
-            "controller": [
-                "安卓端（模拟器）"
-            ],
-            "resource": [
-                "KOG"
-            ]
         },
         {
             "name": "留侯疑塚",
@@ -182,7 +213,7 @@
                 "KOG"
             ],
             "group": [
-                "少女回战"
+                "日常"
             ]
         },
         {
@@ -190,7 +221,7 @@
             "entry": "抽卡_武将",
             "description": "自动抽取武将，任务需要手动停止",
             "group": [
-                "少女回战"
+                "小工具"
             ],
             "controller": [
                 "安卓端（模拟器）"
@@ -210,7 +241,7 @@
                 "KOG"
             ],
             "group": [
-                "少女回战"
+                "小工具"
             ]
         },
         {
@@ -224,7 +255,7 @@
                 "KOG"
             ],
             "group": [
-                "少女回战"
+                "小工具"
             ]
         },
         {
@@ -238,7 +269,7 @@
                 "KOG"
             ],
             "group": [
-                "少女回战"
+                "小工具"
             ]
         },
         {
@@ -252,7 +283,7 @@
                 "KOG"
             ],
             "group": [
-                "少女回战"
+                "小工具"
             ]
         },
         {
@@ -266,7 +297,7 @@
                 "KOG"
             ],
             "group": [
-                "少女回战"
+                "小工具"
             ]
         },
         {
@@ -280,7 +311,7 @@
                 "KOG"
             ],
             "group": [
-                "少女回战"
+                "小工具"
             ]
         },
         {
@@ -294,7 +325,7 @@
                 "KOG"
             ],
             "group": [
-                "少女回战"
+                "小工具"
             ]
         },
         {
@@ -308,15 +339,17 @@
                 "KOG"
             ],
             "group": [
-                "少女回战"
+                "小工具"
             ]
         }
     ],
     "group": [
         {
-            "name": "少女回战",
-            "label": "少女回战",
+            "name": "日常",
             "default_expand": true
+        },
+        {
+            "name": "小工具"
         }
     ]
 }
